@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Devison Demo</title>
+    </head>
+<body>
+    
+<div><h1>Calculation:</h1></div>
+<div>
+    <label for="inputA">A:</label>
+    <input type="number" id="inputA" value="" style="color: brown" /><!--Kimsrean Superpower-->
+    <label for="inputB">B:</label>
+    <input type="number" id="inputB" value="" />
+</div>
+<div>
+    <input type="button" id="myButton" value="Calculate" onclick="callMyCalculation()"
+    >
+    <button  onclick="alert('You telling lie!');">Click Me</button>
+</div>
+<p id="demo"></p>
+
+<script>
+    function callMyCalculation() {
+        var a = document.getElementById('inputA').value;
+        var b = document.getElementById('inputB').value;
+       
+        var result=calculateTwoDivision(a, b);
+        result= result + '  ,  ' + calculateTwoMultiple(a, b)+'  ,  '+ calculateTwoPlus(a,b) +' ,  '+calcuateSubtraction(a,b);
+		document.getElementById("demo").innerHTML=result;
+    }
+ 
+ function calculateTwoDivision(a,b){
+     if (b == 0) return 0;
+     return a/b ;
+ }
+ function calculateTwoMultiple(a,b){
+     return a*b ;
+ }
+ function calcuateSubtraction(a,b) {
+ return a - b;
+ }
+ function calculateTwoPlus(a,b){
+	var x = parseInt(a);
+	var y = parseInt(b);
+	return x + y;
+ }
+ </script>
+ </body>
+ </html>
+ 
