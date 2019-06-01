@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Storge Demo</title>
+        <style>
+        input[type=text] {
+                 padding: 10px 25px;
+
+                 border: 1px solid darkgray;
+                 color: blue;
+    
+}
+input[type=button] {
+  color: black;
+  padding: 10px 50px;
+  border: 1px solid darkgray;
+ 
+}
+
+        </style>
+    
+    </head>
+<boby>
+    <h1 style="color:darkcyan">Mobile Storage</h1>
+            <div>
+            <label><b>Company code</b></label>
+            <br>
+            <input type="password" id="inputCompanyCode" /> 
+        <br>
+        <br>
+            <input type="button" value="SET COMPANY" onclick="clickSetCompany()">
+            <script>
+            function clickSetCompany() {
+                var inputCompanyCode = document.getElementById('inputCompanyCode').value;
+                if (inputCompanyCode.length ==0) {
+                    alert('Please input companyt code!');
+                    //document.getElementById('inputCompanyCode').focus();
+                    return;
+                }
+                if ( inputCompanyCode.length < 8 ) {
+                    alert('Your input is ' + inputCompanyCode.length + " characters, less than 8 characters. Please input again!");
+                    //document.getElementById('inputCompanyCode').focus();
+                    return;
+                }
+                document.location ="login.html";
+            }
+        </script>
+                   
+    </div>
+    
+</boby>
+</html>

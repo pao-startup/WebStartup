@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Storge Demo</title>
+<style>
+input[type=password] {
+    padding: 10px 25px;
+    border: 1px solid darkgray;
+    color: blue;
+}
+
+input[type=button] {
+    color: red;
+    padding: 10px;
+    border: 1px solid darkgray;
+}
+</style>
+    </head>
+<boby>
+    <h1 style="color:cadetblue">Mobile Storage</h1>
+    <div>
+        <label><b>Company code</b></label>
+        <br>
+        <input type="password" id="inputCompanyCode" />
+        <br>
+        <input type="button" value="SET COMANY" onclick="clickSetCompany()">
+        <script>
+            function clickSetCompany() {
+                var inputCompanyCode = document.getElementById('inputCompanyCode').value;
+                if (inputCompanyCode.length ==0) {
+                    alert('Please input companyt code!');
+                    //document.getElementById('inputCompanyCode').focus();
+                    return;
+                }
+                if ( inputCompanyCode.length < 8 ) {
+                    alert('Your input is ' + inputCompanyCode.length + " characters, less than 8 characters. Please input again!");
+                    //document.getElementById('inputCompanyCode').focus();
+                    return;
+                }
+                document.location ="login.html";
+            }
+        </script>
+    </div>
+</boby>
+</html>
+
+/////
+--HTML:
+1. HTML Tags:
+<html></html>
+<head></head>
+<title></title>
+<style></style>
+<body></body>
+<h1></h1>
+<div></div>
+<label></label>
+<b></b>
+<br>
+<input id="companyCode120" type="text" name="companyCode120" class="cssClassName" stype="">
+
+--CSS:
+1. In page, inside page, internal page:
+Syntax:
+1.1 style tag:
+<style>
+    I). name of tags (all html tags):
+    + p {}
+    + h1 {}
+    + div {}
+    + b {}
+    + input {}
+    II). id attribute of tags:
+    #table1 {}
+    III). class attribute  of tags:
+    .className {}
+    EX:
+    .companyCodeClass {}
+</style>
+1.2 inline style, style attribute:
+<h1 style="color: chartreuse;border: 1px  none #000; vertical-align: auto"></h1>
+2. Out of page, outside of page, external page
+
+

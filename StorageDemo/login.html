@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Login Passwork</title>
+    <style>
+    
+      input[type=text] {
+                 padding: 10px 15px;
+                 border: 1px solid darkgray;
+                 color: blue;   
+                 color:dimgray;
+}
+
+input[type=button] {
+  color: black;
+  padding: 10px 70px;
+  border: 1px solid darkgray;
+ 
+}
+#inputPassword{
+                  padding: 10px 15px;
+                 border: 1px solid darkgray;
+                color:dimgray;
+                   
+}    
+    </style>
+</head>
+<body>
+        <h1 style="color:deepskyblue">Mobile Storage</h1>
+
+    <div><input type="text" id="inputUserName" value placeholder="User name" /></div>
+    <br>
+    <div> <input type="password" id="inputPassword" value placeholder="Password" /></div>
+     <br>
+     <input type="button" value="Login" onclick="loginCode()"/>
+   
+     <script>
+     function loginCode(){
+        var inputUserName = document.getElementById('inputUserName').value;
+        var inputPassword = document.getElementById('inputPassword').value;
+        // if(inputUserName.length==0){
+        //    alert('Please input your user name!');
+        //     return;
+        // }
+        // if(inputPassword > 8){
+        //   alert('Please input your password at least 8 charactors!'); 
+        //   return;
+        // }
+        // please test it :
+        if (inputUserName=="Kimsrean") 
+          if (inputPassword=="123456") {
+            document.location="order.html";
+            }
+          else{alert("the password you entered is incorrect.Please try again!");}
+        else{alert("Please input your username again ! it is  incorrect");}
+          //
+          //the condition is difference ,so please test it before!!! 
+      // var inputPassword = document.getElementById('inputPassword').value;
+      // if(inputPassword.length >= 8){
+     //   alert('Please input your password' + inputPassword.length+"at least 8 charactors!");
+     //alert('Please input your password at least 8 charactors!');
+      //  return;
+
+      // }
+       
+        document.location="order.html";
+
+     }
+     
+     
+     </script>
+    
+
+</body>
+
+</html>
