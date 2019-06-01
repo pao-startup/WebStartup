@@ -34,12 +34,13 @@ input[type=button] {
                 var inputCompanyCode = document.getElementById('inputCompanyCode').value;
                 if (inputCompanyCode.length ==0) {
                     alert('Please input companyt code!');
-                    //document.getElementById('inputCompanyCode').focus();
+                    document.getElementById('inputCompanyCode').focus();
                     return;
                 }
                 if ( inputCompanyCode.length < 8 ) {
                     alert('Your input is ' + inputCompanyCode.length + " characters, less than 8 characters. Please input again!");
-                    //document.getElementById('inputCompanyCode').focus();
+                    document.getElementById('inputCompanyCode').value = '';
+                    document.getElementById('inputCompanyCode').focus();
                     return;
                 }
                 document.location ="login.html";
