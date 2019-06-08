@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Login Passwork</title>
-    <style>
-    
-      input[type=text] {
-                 padding: 10px 15px;
-                 border: 1px solid darkgray;
-                 color: blue;   
-                 color:dimgray;
-}
-
+<title> Login Passwork</title>
+<style>
+  input[type=text] {
+    padding: 10px 15px;
+    border: 1px solid darkgray;
+    color: blue;
+    color:dimgray;
+  }
 input[type=button] {
   color: black;
   padding: 10px 70px;
   border: 1px solid darkgray;
- 
 }
-#inputPassword{
-                  padding: 10px 15px;
-                 border: 1px solid darkgray;
-                color:dimgray;
-                   
+#inputPassword {
+  padding: 10px 15px;
+  border: 1px solid darkgray;
+  color:dimgray;
 }    
-    </style>
+</style>
 </head>
 <body>
-        <h1 style="color:deepskyblue">Mobile Storage</h1>
-
-    <div><input type="text" id="inputUserName" value placeholder="User name" /></div>
+    <h1 style="color:deepskyblue;">Mobile Storage</h1>
+    <div><input type="text" id="inputUserName" placeholder="User name" /></div>
     <br>
-    <div> <input type="password" id="inputPassword" value placeholder="Password" /></div>
-     <br>
+    <div> <input type="password" id="inputPassword"  placeholder="Password" /></div>
+    <br>
      <input type="button" value="Login" onclick="loginCode()"/>
    
      <script>
-     function loginCode(){
-        var inputUserName = document.getElementById('inputUserName').value;
+     function loginCode(){ // function is the keyword in javascript, is a piece of code to perform/do/make, function header
+        let inputUserName = document.getElementById('inputUserName').value;
         var inputPassword = document.getElementById('inputPassword').value;
-        // if(inputUserName.length==0){
-        //    alert('Please input your user name!');
-        //     return;
-        // }
-        // if(inputPassword > 8){
-        //   alert('Please input your password at least 8 charactors!'); 
-        //   return;
-        // }
-        // please test it :
-        if (inputUserName=="Kimsrean") 
-          if (inputPassword=="123456") {
-            document.location="order.html";
-            }
-          else{alert("the password you entered is incorrect.Please try again!");}
-        else{alert("Please input your username again ! it is  incorrect");}
-          //
-          //the condition is difference ,so please test it before!!! 
-      // var inputPassword = document.getElementById('inputPassword').value;
-      // if(inputPassword.length >= 8){
-     //   alert('Please input your password' + inputPassword.length+"at least 8 charactors!");
-     //alert('Please input your password at least 8 charactors!');
-      //  return;
 
-      // }
+        // 1 - condition: if not input username and password then alert: please input your user name and password
+        if(inputUserName.length == 0 && inputPassword.length == 0){
+           alert('Please input your user name and password!');
+           return;
+        }
+        // 2 - condition: if not input password then alert SMS : Please input your password!
+        if(inputPassword.length==0){
+          alert('Please input your password!');
+          return;
+        }
+        // 3- condition: if not input user name then alert SMS: Please input your user name!
+        if(inputUserName.length == 0){
+          alert("Please input your user name!");
+          return;
+        }
+        // 4-condition: if input user name and password but you input only 1 charactor in password and user name then alert: Please input less 8 charator on user name and password!
+        if(inputUserName.length <= 8 && inputPassword.length <=8){
+          alert("Please input at least 8 charactors in user name and password!");
+          return;
+        }
+        if(inputUserName.length <=8){
+          alert('Please input your user name at least 8 charactors!');
+          return;
+        }
+        // 5 - condition: if input password only 1 charactor then: alert:please input less 8 charator in password
+        // please test it :
+        if(inputPassword.length <= 8){
+          alert('Please input your password at least 8 charactors!');
+          return;
+        }
        
         document.location="order.html";
 
