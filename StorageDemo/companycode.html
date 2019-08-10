@@ -4,12 +4,10 @@
         <title> Storge Demo</title>
         <style>
         input[type=text] {
-                 padding: 10px 25px;
-
-                 border: 1px solid darkgray;
-                 color: blue;
-    
-}
+            padding: 10px 25px;
+            border: 1px solid darkgray;
+            color: blue;
+        }
 input[type=button] {
   color: black;
   padding: 10px 50px;
@@ -22,14 +20,14 @@ input[type=button] {
     </head>
 <boby>
     <h1 style="color:darkcyan">Mobile Storage</h1>
-            <div>
-            <label><b>Company code</b></label>
-            <br>
-            <input type="password" id="inputCompanyCode" /> 
+    <div>
+        <label><b>Company code</b></label>
+        <br>
+        <input type="password" id="inputCompanyCode" /> 
         <br>
         <br>
-            <input type="button" value="SET COMPANY" onclick="clickSetCompany()">
-            <script>
+        <input type="button" value="SET COMPANY" onclick="clickSetCompany()">
+        <script>
             function clickSetCompany() {
                 var inputCompanyCode = document.getElementById('inputCompanyCode').value;
                 if (inputCompanyCode.length ==0) {
@@ -45,8 +43,7 @@ input[type=button] {
                 }
                 document.location ="login.html";
             }
-        </script>
-                   
+        </script>  
     </div>
     
 </boby>
