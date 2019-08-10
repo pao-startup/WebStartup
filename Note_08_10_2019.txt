@@ -1,0 +1,127 @@
+Saturday 10-August-2019
+
+Agenda
+- Review
+- New and Apply
+- Questions
+
+
+1. Review
+-comment prompt 
+-Githun
+-html
+-Css(external style (call by ID and Class but external file used in .css & internal style (inline style ,call by ID and Class ).
+-javascript
+-function javascript
+-IOS and Android
+-Interface
+-Native Javascript (Javascript - no framework or library) - Original Javascript/Native JS
+
+2. New and Apply
+-Native Javascript - Parent
+-Framework of Javascript:
+JQuery
+Node
+Angula
+Reach
+Vue
+Backbone
+Polymer
+
+
+-From Javascript to  JQuery:
+JQuery - it is Javascript Framework
+
+Native Javascript:
+document.getElementById('inputCompanyCode').value;
+
+JQuery:
+$("#inputCompanyCode").val();
+
+
+++i
+i++
+i = i + 1
+
+--i
+i--
+i = i - 1
+
+
+Variable:
+var x, y;
+
+
+Condition Vs Loop?
+-Condition (if,else,  switch case)
+-Loop (for ,while , do while ,for each )
+
+Array
+
+a[5]=[0 1 2 3 4]
+
+
+
+
+
+var x = 5;
+var y = (x > 3) ? 10 : 15;
+Answer: 10
+
+
+var y = (x > 3) ? 10 : 15;
+
+var y;
+if (x > 3) {
+y = 10;
+}
+else {
+y = 15;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+API - Application Programming Interface
+
+
+
+
+English:
+UK English
+American English
+Australia English
+
+
+
+
+
+
+
+
+
+3. QUestions
+-No
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
