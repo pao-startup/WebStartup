@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title> Register form</title>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* .col-md-2{ margin-left:10px;} */
+.container{background:paleturquoise;}
+p{font-size:12px;
+  font-family: 'Trebuchet MS';
+  color:dimgrey;}
+  #submit{ background-color:lightslategray;
+}
+#reset{background-color:mediumaquamarine;}
+h2{color:lightseagreen;
+    text-align:center;}
+input{border-radius:5px;}
+button{ background-color:palegreen;}
+
+
+</style>
+    </head>
+
+<body>
+   <div class="container">
+       <h2>REGISTRATION</h2>
+<form>
+    <!-- Enter Name -->
+<div class="form-group">
+ <div class="col-md-2">
+<label for="usr"> First Name</label>
+</div>
+<div class="col-md-10">
+<input type="text" class="form-control" id="name" placeholder="First Name"><br>
+</div>
+</div>
+<!-- Last Name -->
+<div class="form-group">
+<div class="col-md-2">
+<label for="usr">Last Name</label>
+</div>
+<div class="col-md-10">
+<input type="text" class="form-control" id="text" placeholder="Last Name" ><br>
+</div>
+</div>
+<!-- Input email -->
+<div class="form-group">
+    <div class="col-md-2">
+    <label for="usr">Email*</label>
+     </div>
+ <div class="col-md-10">
+<input type="email" class="form-control" id="email" placeholder="Email" ><br>
+ </div>
+ </div>
+ <!-- Input password -->
+ <div class="form-group">
+ <div class="col-md-2">
+ <label for="usr">Password*</label>
+        </div>
+        <div class="col-md-10">
+        <input type="password" class="form-control" id="password" placeholder="Password" ><br>
+        </div>
+        </div>
+
+<!-- comfirm password -->
+<div class="form-group">
+        <div class="col-md-2">
+        <label for="usr">Confirm Password</label>
+        </div>
+        <div class="col-md-10">
+        <input type="password" class="form-control" id="password" placeholder="password" ><br>
+        </div>
+        </div>
+<!-- Date of Birth -->
+<div class="form-group">
+        <div class="col-md-2">
+        <label for="usr">Date of Birth*</label>
+        </div>
+        <div class="col-md-10">
+        <input type="date" class="form-control" id="date" placeholder="DD-MM-YYYY" ><br>
+        </div>
+        </div>
+<!-- Phone number -->
+<div class="form-group">
+        <div class="col-md-2">
+        <label for="usr">Phone number</label>
+        </div>
+        <div class="col-md-10">
+        <input type="number" class="form-control" id="phonenumber" placeholder="Phone number" ><br>
+        </div>
+        </div>
+<!-- Height -->
+ <div class="form-group">
+    <div class="col-md-2">
+     <label for="usr">Height*</label>
+     </div>
+    <div class="col-md-10">
+    <input type="text" class="form-control" id="password" placeholder="Please write your height in centimetres" ><br>
+      </div>
+     </div>  
+<!-- Weight       -->
+<div class="form-group">
+        <div class="col-md-2">
+         <label for="usr">Weight*</label>
+         </div>
+        <div class="col-md-10">
+        <input type="text" class="form-control" id="password" placeholder="Please write your weight in kilograms" ><br>
+          </div>
+         </div>  
+<!-- Gender -->
+         <div class="form-group">
+                <label for="sel1" class="col-md-2">Gender</label><br>
+                <div class="col-md-10">
+                <label class="radio-inline">
+                <input type="radio" name="optradio">Female
+                </label>
+                <label class="radio-inline">
+                 <input type="radio" name="optradio">Male
+                 </label><br>
+                 * Required fields
+                </div>
+            </div>
+   <button class="btn btn-block">Register</button>
+</form>
+   </div>
+    
+</body>
+</html>

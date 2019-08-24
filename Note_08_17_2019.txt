@@ -1,0 +1,63 @@
+Agenda
+1. Review
+2. New and Apply
+3. Questions
+
+
+
+1. Review
+ native javascript(no framework  ..document.write("");
+ framework javascript
+that we have :
+ JQuery 
+ node
+...
+react 
+
+API
+
+javascript : Operator ,( *,+,/,%,=+; ==;.....);
+ 
+
+2. New  and Apply
+>> Just play around with Elementor (Word Press Plugin)
+>> Purpose of study:
+CreateWeb Site
+Advertisment
+More:
+- Write code
+- Understand code
+- Understand Logic
+- Science - not social
+- Apply real problem with coding
+Example:
+Create Mobile App
+Create Desktop App
+
+Accounting App
+Math App
+Financial App
+
+
+VB programming
+VBA - word, excel, access
+Java
+C#
+Python
+
+Andriod - Anroid App (Google)
+Object C - Iphone App (Apple)
+
+
+
+
+3. Questions:
+No
+
+
+
+Assignment:
+2. Create Calculator by javascript
+1. Create A page from bootstrap, JQuery, Javascript
+
+

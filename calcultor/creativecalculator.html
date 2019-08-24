@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcutor by dymic</title>
+    <style>
+    .result{ margin-left: 15px;}
+    button{
+        width: 30px;
+        height: 30px;
+        background-color:aquamarine;
+        margin-left: 10px;
+    }
+    
+    </style>
+</head>
+<body>
+  
+    <form>
+     
+        <label>A</label>
+        <input type="text" id="a" ><br><br>
+        <label>B</label>
+        <input type="text" id="b" ><br><br>
+        <input type="text" id="c" readonly class="result"><br><br>
+        <button type="button" onclick="sum()">+</button> 
+        <button type="button" onclick="sut()">-</button>
+        <button type="button" onclick="mut()">*</button>
+        <button type="button" onclick="add()">/</button>
+        
+    </form>
+    <script>
+        function sum(){
+            var x,y;
+            x=document.getElementById("a").value;
+            y=document.getElementById("b").value;
+            document.getElementById("c").value=parseInt(x)+parseInt(y);
+
+        }
+        function sut(){
+            var x,y;
+            x=document.getElementById("a").value;
+            y=document.getElementById("b").value;
+            document.getElementById("c").value=parseInt(x)-parseInt(y);
+
+        }
+        function mut(){
+            var x,y;
+            x=document.getElementById("a").value;
+            y=document.getElementById("b").value;
+            document.getElementById("c").value=x*y;
+        }
+
+        function add(){
+            var x,y;
+            x=document.getElementById("a").value;
+            y=document.getElementById("b").value;
+            document.getElementById("c").value=x/y;
+        }
+    
+    </script>
+    
+</body>
+</html>

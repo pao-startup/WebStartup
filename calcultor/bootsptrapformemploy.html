@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Form Employee</title>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.container{
+    background-color:azure;
+}
+h3{
+    color:steelblue;
+}
+
+
+</style>
+<body>
+   <div class="container">
+       <h3><b>Employee Information</b></h3>
+<form>
+<div class="form-group">
+<label for="usr">Input full name</label>
+<input type="text" class="form-control" id="name">
+</div>
+<div class="form-group">
+<label for="usr">Input Password</label>
+<input type="password" class="form-control" id="passWord">
+</div>
+<div class="form-group">
+    <label for="sel1">Select list(select one)</label>
+    <select class="form-control" id="sel1">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="sel1">Address</label><br>
+    <label class="radio-inline">
+    <input type="radio" name="optradio" id="phnomPenh">Phnom penh
+    </label>
+    <label class="radio-inline">
+     <input type="radio" name="optradio" id="KompongCham">Kompong Cham
+     </label>
+     <label class="radio-inline">
+    <input type="radio" name="optradio" id="kanDal">Kandal
+     </label>
+</div>
+<br>
+<div class="form-group">
+    <label for="comment">comment:</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+<button type="submit" class="btn btn-default" onclick="sumitInformation()">Submit</button>
+<button type="reset" class="btn btn-default">Reset</button>
+</form>
+ </div>
+ <script>
+ function sumitInformation(){
+ var name= document.getElementById('name').value;
+ var passWord=document.getElementById('passWord').value;
+
+  // 1 - condition: if not input username and password then alert: please input your user name and password
+  if(name.length == 0 && passWord.length == 0){
+           alert("Please enter your user name and password!");
+           return;
+        }
+
+// Please enter your user name !
+if(name.length==0){
+    alert("Please enter your user name");
+    return;
+
+}
+// please enter password
+if(passWord.length==0){
+    alert("Please input your password!");
+    return;
+
+}
+if(name.length <= 6 && passWord.length <=6){
+          alert("Please input 6 charactors more in name and password!");
+          return;
+        }
+    if(name.length<=6){
+        alert("Please enter  6 charactors more in your user name!");
+        return;
+    }
+    if(passWord.length<=6){
+        alert("Please enter 6 charactor more your password! ");
+        return;
+    }
+//  var sel1=document.getElementById('sel1').value;
+//   if(sel1==1){
+//       alert("Please choose one!");
+//       return;
+//   }
+//  var optradio=document.getElementsByName('optradio').value;
+//   if(optradio==1){
+//       alert("Please choose one!");
+//       return;
+//   }
+ 
+  document.location="creativecalculator.html";
+ 
+ }
+ </script>
+    
+</body>
+</html>
