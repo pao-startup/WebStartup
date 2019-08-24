@@ -2,56 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="calcustyle.css">
-            
-            <!-- <script type="text/javascript" src="calca.js"></script> -->
-            <title>Creative Calculator </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="calcustyle.css">
+     
+     <!-- <script type="text/javascript" src="calca.js"></script> -->
+    <title>Creative Calculator </title>
 </head>
 <body>
-
     <div class="container">
-    <div class="calculator">
-
+      <div class="calculator">
         <input type="text" class="calculator-screen" value="" disabled />
-        
         <div class="calculator-keys">
-          
           <button type="button" class="operator" value="+">+</button>
           <button type="button" class="operator" value="-">-</button>
           <button type="button" class="operator" value="*">&times;</button>
           <button type="button" class="operator" value="/">&divide;</button>
-      
+
           <button type="button" value="7">7</button>
           <button type="button" value="8">8</button>
           <button type="button" value="9">9</button>
-      
-      
+
           <button type="button" value="4">4</button>
           <button type="button" value="5">5</button>
           <button type="button" value="6">6</button>
-      
-      
+
           <button type="button" value="1">1</button>
           <button type="button" value="2">2</button>
           <button type="button" value="3">3</button>
-      
-      
+          
           <button type="button" value="0">0</button>
           <button type="button" class="decimal" value=".">.</button>
           <button type="button" class="all-clear" value="all-clear">AC</button>
-      
+
           <button type="button" class="equal-sign operator" value="=">=</button>
-      
         </div>
       </div>
     </div>
-    <script>
-    
-    const calculator = {
+<script>
+/*OOP - Object Oriented Programming
+Functional Programming vs OOP?
+OOP:
+class - blue print / plan
+object - insteance of class
+
+How to create class:
+class ClassName {
+  properties/attributes (default, private, protected, public)
+  function/method (default, private, protected, public)
+}
+
+function functionName(arguments / peramters) {
+  //body - statements
+}
+//Create object
+ClassName className = new ClassName();
+className->propertyName;
+className->functionName();
+
+
+Object Base Programming:
+//Create Object
+var/let/const variableName = {
+  propertyName : value,
+  .....
+};
+
+
+
+calculator - variableName,
+displayValue - propertyName
+*/
+
+
+
+
+const calculator = {
   displayValue: '0',
   firstOperand: null,
   waitingForSecondOperand: false,
@@ -61,11 +89,16 @@
 function inputDigit(digit) {
   const { displayValue, waitingForSecondOperand } = calculator;
 
-  if (waitingForSecondOperand === true) {
+  if (waitingForSecondOperand === true) {//compare both value and datatype, == is only for value
     calculator.displayValue = digit;
     calculator.waitingForSecondOperand = false;
   } else {
-    calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
+    //calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
+    if (displayValue === '0') {
+      calculator.displayValue = digit;
+    } else {
+      calculator.displayValue = displayValue + digit;
+    }
   }
 }
 
@@ -122,6 +155,7 @@ function resetCalculator() {
 }
 
 function updateDisplay() {
+  console.log(document);
   const display = document.querySelector('.calculator-screen');
   display.value = calculator.displayValue;
 }
