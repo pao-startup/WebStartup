@@ -60,4 +60,40 @@ Assignment:
 2. Create Calculator by javascript
 1. Create A page from bootstrap, JQuery, Javascript
 
+24-Aungust-2019:
+/*OOP - Object Oriented Programming
+Functional Programming vs OOP?
+OOP:
+class - blue print / plan
+object - insteance of class
+
+How to create class:
+class ClassName {
+  properties/attributes (default, private, protected, public)
+  function/method (default, private, protected, public)
+}
+
+function functionName(arguments / peramters) {
+  //body - statements
+}
+//Create object
+ClassName className = new ClassName();
+className->propertyName;
+className->functionName();
+
+
+Object Base Programming:
+//Create Object
+var/let/const variableName = {
+  propertyName : value,
+  .....
+};
+
+
+
+calculator - variableName,
+displayValue - propertyName
+*/
+
+
 

@@ -1,0 +1,67 @@
+Assignments:
+1. XHTML?
+2. HTML?
+3. HTML 4 vs HTML 5?
+4. What is quantity?
+5. What is quality?
+6. Quantity vs quality?
+7. Meta Tag?
+8. Link Tag?
+
+
+
+
+
+
+<b> vs <strong>
+<strong> is semantic tag - because it has meaning.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+
+CSS:
+I. Internal:
+1.1 html tag name
+html {
+display : block;
+color : red;
+}
+1.2 html attribues - id, name, class
+
+II. External:
+2.1 file .css
+2.2 the same as I)
+
+
+OOP vs Functional Programming
+
+1. Create object in Javascript:
+var variableName = {
+  propertyName : value,
+....
+};
+
+2. Call or execute object property:
+variableName.propertyName;
+
+
+Ex: 
+var calculor = {
+  displayValue : 0,
+  opperatorName : '+',
+  firstValue : 1,
+  secondValue : 2
+};
+
+console.log(calculor.displayValue);
+
+var arrayName = [
+value1,
+value1,
+value3
+];
+
+

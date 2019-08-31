@@ -3,12 +3,12 @@
 <head>
     <title>Calcutor by dymic</title>
     <style>
-    .result{ margin-left: 15px;}
+    .result{ margin-left: 120px;}
     button{
         width: 30px;
         height: 30px;
         background-color:aquamarine;
-        margin-left: 10px;
+        margin-left:20px;
     }
     
     </style>
@@ -17,15 +17,17 @@
   
     <form>
      
-        <label>A</label>
+        <label>Enter value of A:</label>
         <input type="text" id="a" ><br><br>
-        <label>B</label>
+        <label>Enter value of B:</label>
         <input type="text" id="b" ><br><br>
+        <div class="allButton">
         <input type="text" id="c" readonly class="result"><br><br>
         <button type="button" onclick="sum()">+</button> 
         <button type="button" onclick="sut()">-</button>
         <button type="button" onclick="mut()">*</button>
         <button type="button" onclick="add()">/</button>
+       </div>
         
     </form>
     <script>

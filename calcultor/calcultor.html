@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="calcustyle.css">
-     
-     <!-- <script type="text/javascript" src="calca.js"></script> -->
-    <title>Creative Calculator </title>
+    <link rel="stylesheet" href="calcustyle.css">
+    <title>Creative Calculator</title>
 </head>
 <body>
     <div class="container">
       <div class="calculator">
-        <input type="text" class="calculator-screen" value="" disabled />
+        <input type="text" class="calculator-screen" value="" />
         <div class="calculator-keys">
           <button type="button" class="operator" value="+">+</button>
           <button type="button" class="operator" value="-">-</button>
@@ -42,43 +37,6 @@
       </div>
     </div>
 <script>
-/*OOP - Object Oriented Programming
-Functional Programming vs OOP?
-OOP:
-class - blue print / plan
-object - insteance of class
-
-How to create class:
-class ClassName {
-  properties/attributes (default, private, protected, public)
-  function/method (default, private, protected, public)
-}
-
-function functionName(arguments / peramters) {
-  //body - statements
-}
-//Create object
-ClassName className = new ClassName();
-className->propertyName;
-className->functionName();
-
-
-Object Base Programming:
-//Create Object
-var/let/const variableName = {
-  propertyName : value,
-  .....
-};
-
-
-
-calculator - variableName,
-displayValue - propertyName
-*/
-
-
-
-
 const calculator = {
   displayValue: '0',
   firstOperand: null,
