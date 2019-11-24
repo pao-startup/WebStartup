@@ -71,40 +71,7 @@
 			<div class="col-md-3">
 				<img id="qImage" src="" alt="" style="max-height: 185px;">
 			</div>
-			<div id="qBody" class="col">
-				<!--<div class="input-group mb-3">
-				  <div class="input-group-prepend">
-					<div class="input-group-text">
-					  <input type="checkbox" value="1">
-					</div>
-				  </div>
-				  <label class="form-control">A school zone</label>
-				</div>
-				<div class="input-group mb-3">
-				  <div class="input-group-prepend">
-					<div class="input-group-text">
-					  <input type="checkbox" value="0">
-					</div>
-				  </div>
-				  <label class="form-control">A pedestrian crossing</label>
-				</div>
-				<div class="input-group mb-3">
-				  <div class="input-group-prepend">
-					<div class="input-group-text">
-					  <input type="checkbox" value="0">
-					</div>
-				  </div>
-				  <label class="form-control">A hospital</label>
-				</div>
-				<div class="input-group mb-3">
-				  <div class="input-group-prepend">
-					<div class="input-group-text">
-					  <input type="checkbox" value="0">
-					</div>
-				  </div>
-				  <label class="form-control">A bus stop</label>
-				</div>-->
-			</div>
+			<div id="qBody" class="col" data-q="0"></div>
 		</div>
 		<div class="row">
 			<div class="col">
@@ -116,15 +83,15 @@
       <br/>
 
       <nav class="blog-pagination">
-        <a id="backQuestion" class="btn btn-outline-secondary practice-test-btn practice-test-hide" data-q="0">Back Question</a>
-        <a id="nextQuestion" class="btn btn-outline-primary practice-test-btn disabled" data-q="1">Next Question</a>
+        <a id="backQuestion" class="btn btn-outline-secondary practice-test-btn practice-test-hide">Back Question</a>
+        <a id="nextQuestion" class="btn btn-outline-primary practice-test-btn disabled">Next Question</a>
       </nav>
 
 	  <br/>
 
       <nav class="blog-pagination practice-test-hide">
-        <a id="backPracticeTest" class="btn btn-outline-secondary practice-test-btn"  data-q="0">Back MN DVS Practice Test</a>
-        <a id="nextPracticeTest" class="btn btn-outline-primary practice-test-btn"  data-q="1">Next MN DVS Practice Test</a>
+        <a id="backPracticeTest" class="btn btn-outline-secondary practice-test-btn">Back MN DVS Practice Test</a>
+        <a id="nextPracticeTest" class="btn btn-outline-primary practice-test-btn">Next MN DVS Practice Test</a>
       </nav>
 
 	  <br/>
@@ -139,52 +106,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/util.js"></script>
+<script src="js/app-data.js"></script>
 <script>
 $(document).ready(function() {
-	let q1 = {
-		"type" : "checkbox",
-		"title" : "What does this sign indicate?",
-		"src" : "sign_school_zone_ahead.svg",
-		"choices" : [
-			{"q" : "A school zone", "a" : 1},
-			{"q" : "A pedestrian crossing", "a" : 0},
-			{"q" : "A hospital", "a" : 0},
-			{"q" : "A bus stop", "a" : 0},
-			],
-		"hint" : "This sign indicates a school zone ahead. Schoolchildren may be crossing the road ahead, so slow down and proceed with caution."
-		},
-		q2 = {
-		"type" : "checkbox",
-		"title" : "A center lane between opposing lanes of traffic may be designated for",
-		"src" : "sign_left_turns_only.svg",
-		"choices" : [
-			{"q" : "right turns only.", "a" : 0},
-			{"q" : "passing", "a" : 0},
-			{"q" : "left turns only.", "a" : 1},
-			{"q" : "all of the above.", "a" : 0},
-			],
-		"hint" : "A center lane between lanes of traffic traveling in opposite directions may be designated for left turns only. This type of lane is marked by parallel solid and dashed yellow lines and is sometimes accompanied by white arrows on the pavement."
-		};
-	let practices = [
-		{"p1" : [q1, q2]},
-		{"p2" : [q1, q2]}
-	];
-	/*for (let i in practices) {
-		console.log('Practice: ' + i);
-		let practice = practices[i];
-		for (let j in practice) {
-			console.log('questions: ' + j);
-			let questions = practice[j];
-			for (let q in questions) {
-				console.log(questions[q].title);
-				let choices = questions[q].choices;
-				for (let c in choices) {
-					console.log(choices[c].q);
-					console.log(choices[c].a);
-				}
-			}
-		}
-	}*/
 	function displayQuestionCheckbox(choices) {
 		if (!Util.isValidArray(choices)) {
 			alert('No Choice for this Question!');
@@ -202,8 +126,35 @@ $(document).ready(function() {
 			divSelector = divSelector + '</div>';
 			$( divSelector ).appendTo( '#qBody' );
 		}
+		(function() {
+			$("input[type=checkbox]").click(function() {
+				let value = $(this).val(),
+					checked = $(this).prop("checked");
+				$('input:checkbox').prop('checked', false);
+				$(this).prop("checked", checked);
+				if (checked && 1 == value) {
+					let currentQuestionNumber = parseInt($('#qBlog').data('q'));
+					console.log('currentQuestionNumber: ' + currentQuestionNumber);
+					$('#qBody').data('q', 1);
+					$('#nextQuestion').removeClass('disabled');
+					$('#qHint').removeClass('practice-test-hide').addClass("practice-test-show");
+					$('input:checkbox').prop("disabled", true);
+					if (currentQuestionNumber > 1) {
+						$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
+					} else {
+						$('#backQuestion').removeClass('practice-test-show').addClass('practice-test-hide');
+					}
+				} else {
+					$('#nextQuestion').removeClass('disabled').addClass('disabled');
+					$('input:checkbox').prop("disabled", false);
+					$('#qHint').removeClass('practice-test-show').addClass("practice-test-hide");
+					$('#qBody').data('q', 0);
+				}
+			});
+		})();
 	}
-	function displayPracticeTest(practices, practiceIndex, questionIndex) {
+	function displayPracticeTest(practiceIndex, questionIndex) {
+		let practices = AppData.getPractices();
 		if (!Util.isValidArray(practices)) {
 			alert('No Practice Test!');
 			return;
@@ -213,7 +164,8 @@ $(document).ready(function() {
 			questionNumber = (questionIndex + 1),
 			practicePropertyName = "p" + practiceNumber;
 		if (!Util.isValidObjectKey(practice, practicePropertyName)) {
-			alert('There is no ' + practicePropertyName + ' property!');
+			console.log('There is no ' + practicePropertyName + ' property!');
+			alert('No Practice Test!');
 			return;
 		}
 		let questions = practice[practicePropertyName];
@@ -222,40 +174,43 @@ $(document).ready(function() {
 			return;
 		}
 		let question = questions[questionIndex];
-		const QUESTION_IMAGE_PATH = "images/",
-			PRACTICE_TITLE = "MN DVS Practice Test ";
-		$('#pTitle').html(PRACTICE_TITLE + practiceNumber);//practice's title
+		console.log('practiceIndex: ' + practiceIndex + ', questionIndex: ' + questionIndex + ', questionNumber: ' + questionNumber);
+		$('#qBody').data('q', 0);
+		$('#nextQuestion').removeClass('disabled').addClass('disabled');
+		$('#qHint').removeClass('practice-test-show').addClass("practice-test-hide");
+		$('#pTitle').html(AppData.PRACTICE_TITLE + practiceNumber);//practice's title
 		$('#qBlog').data('q', questionNumber);//question's number
 		$('#qTitle').html(question.title);//question's title
 		$('#qHint').html(question.hint);
-		$('#qImage').prop('src', QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
+		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
 		if ('checkbox' == question.type) {
 			displayQuestionCheckbox(question.choices);
 		} else {
 			alert('No Question!');
 		}
 	}
-	displayPracticeTest(practices, 0, 0);
-	$("input[type=checkbox]").click(function() {
-		let value = $(this).val(),
-			checked = $(this).prop("checked");
-		$('input:checkbox').prop('checked', false);
-		$(this).prop("checked", checked);
-		if (checked && 1 == value) {
-			let questionNumber = parseInt($('#qBlog').data('q'));
-			$('#nextQuestion').removeClass('disabled');
-			$('#qHint').removeClass('practice-test-hide').addClass("practice-test-show");
-			$('input:checkbox').prop("disabled", true);
-			if (questionNumber > 1) {
-				$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
-			} else {
-				$('#backQuestion').removeClass('practice-test-show').addClass('practice-test-hide');
-			}
-		} else {
-			$('#nextQuestion').removeClass('disabled').addClass('disabled');
-			$('input:checkbox').prop("disabled", false);
-			$('#qHint').removeClass('practice-test-show').addClass("practice-test-hide");
+	displayPracticeTest(0, 0);
+	$('#nextQuestion').click(function() {
+		let pTitle = $('#pTitle').html(),
+			questionIndex = parseInt($('#qBlog').data('q')),
+			isChecked = parseInt($('#qBody').data('q')) > 0,
+			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+		if (!isChecked) {
+			alert('Try again!');
+			return;
 		}
+		if (practiceIndex <= -1) practiceIndex = 0;
+		let practices = AppData.getPractices(),
+			practice = practices[practiceIndex],
+			practiceNumber = (practiceIndex + 1),
+			practicePropertyName = "p" + practiceNumber,
+			questions = practice[practicePropertyName];
+		if (questionIndex >= questions.length) {
+			questionIndex = 0;
+			practiceIndex = practiceIndex + 1;//next practice test
+		}
+		displayPracticeTest(practiceIndex, questionIndex);
+		$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
 	});
 });
 </script>
