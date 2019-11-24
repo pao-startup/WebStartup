@@ -75,7 +75,8 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<p id="qHint" class="practice-test-hide"></p>
+				<p id="qHint"></p>
+				<p id="qResult" class="practice-test-hide"></p>
 			</div>
 		</div>
       </div><!-- /.blog-post -->
@@ -83,7 +84,7 @@
       <br/>
 
       <nav class="blog-pagination">
-        <a id="backQuestion" class="btn btn-outline-secondary practice-test-btn practice-test-hide">Back Question</a>
+        <a id="backQuestion" class="btn btn-outline-secondary practice-test-btn disabled">Back Question</a>
         <a id="nextQuestion" class="btn btn-outline-primary practice-test-btn disabled">Next Question</a>
       </nav>
 
@@ -106,6 +107,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/util.js"></script>
+<script src="js/app-practice-1.js"></script>
+<script src="js/app-practice-2.js"></script>
+<script src="js/app-practice-3.js"></script>
+<script src="js/app-practice-4.js"></script>
 <script src="js/app-data.js"></script>
 <script>
 $(document).ready(function() {
@@ -137,18 +142,20 @@ $(document).ready(function() {
 					console.log('currentQuestionNumber: ' + currentQuestionNumber);
 					$('#qBody').data('q', 1);
 					$('#nextQuestion').removeClass('disabled');
-					$('#qHint').removeClass('practice-test-hide').addClass("practice-test-show");
 					$('input:checkbox').prop("disabled", true);
+					$('#qHint').removeClass('practice-test-show').addClass('practice-test-hide');
+					$('#qResult').removeClass('practice-test-hide').addClass('practice-test-show');
 					if (currentQuestionNumber > 1) {
-						$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
+						$('#backQuestion').removeClass('disabled');
 					} else {
-						$('#backQuestion').removeClass('practice-test-show').addClass('practice-test-hide');
+						$('#backQuestion').addClass('disabled');
 					}
 				} else {
 					$('#nextQuestion').removeClass('disabled').addClass('disabled');
 					$('input:checkbox').prop("disabled", false);
-					$('#qHint').removeClass('practice-test-show').addClass("practice-test-hide");
 					$('#qBody').data('q', 0);
+					$('#qHint').removeClass('practice-test-hide').addClass('practice-test-show');
+					$('#qResult').removeClass('practice-test-show').addClass('practice-test-hide');
 				}
 			});
 		})();
@@ -176,12 +183,15 @@ $(document).ready(function() {
 		let question = questions[questionIndex];
 		console.log('practiceIndex: ' + practiceIndex + ', questionIndex: ' + questionIndex + ', questionNumber: ' + questionNumber);
 		$('#qBody').data('q', 0);
+		//$('#backQuestion').removeClass('disabled').addClass('disabled');
 		$('#nextQuestion').removeClass('disabled').addClass('disabled');
-		$('#qHint').removeClass('practice-test-show').addClass("practice-test-hide");
+		$('#qHint').removeClass('practice-test-hide').addClass('practice-test-show');
+		$('#qResult').removeClass('practice-test-show').addClass('practice-test-hide');
 		$('#pTitle').html(AppData.PRACTICE_TITLE + practiceNumber);//practice's title
 		$('#qBlog').data('q', questionNumber);//question's number
 		$('#qTitle').html(question.title);//question's title
 		$('#qHint').html(question.hint);
+		$('#qResult').html(question.result);
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
 		if ('checkbox' == question.type) {
 			displayQuestionCheckbox(question.choices);
