@@ -2,7 +2,7 @@ const AppPracticeThree = (function() {
 	let q1 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -15,7 +15,7 @@ const AppPracticeThree = (function() {
 		q2 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -28,7 +28,7 @@ const AppPracticeThree = (function() {
 		q3 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -41,7 +41,7 @@ const AppPracticeThree = (function() {
 		q4 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -54,7 +54,7 @@ const AppPracticeThree = (function() {
 		q5 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -67,7 +67,7 @@ const AppPracticeThree = (function() {
 		q6 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -80,7 +80,7 @@ const AppPracticeThree = (function() {
 		q7 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -93,7 +93,7 @@ const AppPracticeThree = (function() {
 		q8 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -106,7 +106,7 @@ const AppPracticeThree = (function() {
 		q9 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -119,7 +119,7 @@ const AppPracticeThree = (function() {
 		q10 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -132,7 +132,7 @@ const AppPracticeThree = (function() {
 		q11 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -145,7 +145,7 @@ const AppPracticeThree = (function() {
 		q12 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -158,7 +158,7 @@ const AppPracticeThree = (function() {
 		q13 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -171,7 +171,7 @@ const AppPracticeThree = (function() {
 		q14 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -184,7 +184,7 @@ const AppPracticeThree = (function() {
 		q15 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -197,7 +197,7 @@ const AppPracticeThree = (function() {
 		q16 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -210,7 +210,7 @@ const AppPracticeThree = (function() {
 		q17 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -223,7 +223,7 @@ const AppPracticeThree = (function() {
 		q18 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -236,7 +236,7 @@ const AppPracticeThree = (function() {
 		q19 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -249,7 +249,7 @@ const AppPracticeThree = (function() {
 		q20 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -262,7 +262,7 @@ const AppPracticeThree = (function() {
 		q21 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -275,7 +275,7 @@ const AppPracticeThree = (function() {
 		q22 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -288,7 +288,7 @@ const AppPracticeThree = (function() {
 		q23 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -301,7 +301,7 @@ const AppPracticeThree = (function() {
 		q24 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -314,7 +314,7 @@ const AppPracticeThree = (function() {
 		q25 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -327,7 +327,7 @@ const AppPracticeThree = (function() {
 		q26 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -340,7 +340,7 @@ const AppPracticeThree = (function() {
 		q27 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -353,7 +353,7 @@ const AppPracticeThree = (function() {
 		q28 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -366,7 +366,7 @@ const AppPracticeThree = (function() {
 		q29 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -379,7 +379,7 @@ const AppPracticeThree = (function() {
 		q30 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -392,7 +392,7 @@ const AppPracticeThree = (function() {
 		q31 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -405,7 +405,7 @@ const AppPracticeThree = (function() {
 		q32 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -418,7 +418,7 @@ const AppPracticeThree = (function() {
 		q33 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -431,7 +431,7 @@ const AppPracticeThree = (function() {
 		q34 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -444,7 +444,7 @@ const AppPracticeThree = (function() {
 		q35 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -457,7 +457,7 @@ const AppPracticeThree = (function() {
 		q36 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -470,7 +470,7 @@ const AppPracticeThree = (function() {
 		q37 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -483,7 +483,7 @@ const AppPracticeThree = (function() {
 		q38 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -496,7 +496,7 @@ const AppPracticeThree = (function() {
 		q39 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},
@@ -509,7 +509,7 @@ const AppPracticeThree = (function() {
 		q40 = {
 		"type" : "checkbox",
 		"title" : "",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "", "a" : 0},
 			{"q" : "", "a" : 0},

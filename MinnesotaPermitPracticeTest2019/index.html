@@ -145,11 +145,11 @@ $(document).ready(function() {
 					$('input:checkbox').prop("disabled", true);
 					$('#qHint').removeClass('practice-test-show').addClass('practice-test-hide');
 					$('#qResult').removeClass('practice-test-hide').addClass('practice-test-show');
-					if (currentQuestionNumber > 1) {
+					/*if (currentQuestionNumber > 1) {
 						$('#backQuestion').removeClass('disabled');
 					} else {
 						$('#backQuestion').addClass('disabled');
-					}
+					}*/
 				} else {
 					$('#nextQuestion').removeClass('disabled').addClass('disabled');
 					$('input:checkbox').prop("disabled", false);
@@ -220,6 +220,7 @@ $(document).ready(function() {
 			practiceIndex = practiceIndex + 1;//next practice test
 		}
 		displayPracticeTest(practiceIndex, questionIndex);
+		$('#backQuestion').removeClass('disabled');
 		$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
 	});
 });

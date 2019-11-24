@@ -41,7 +41,7 @@ const AppPracticeOne = (function() {
 		q4 = {
 		"type" : "checkbox",
 		"title" : "While driving a car equipped with airbags, do not place your hands on the steering wheel at __________ positions.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "the 10 o'clock and 2 o'clock", "a" : 1},
 			{"q" : "the 8 o'clock and 4 o'clock", "a" : 0},
@@ -80,7 +80,7 @@ const AppPracticeOne = (function() {
 		q7 = {
 		"type" : "checkbox",
 		"title" : "When passing another vehicle, you must",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "return to the left side of the road before coming within 200 feet of an oncoming vehicle.", "a" : 0},
 			{"q" : "return to the right side of the road before coming within 100 feet of an oncoming vehicle.", "a" : 1},
@@ -93,7 +93,7 @@ const AppPracticeOne = (function() {
 		q8 = {
 		"type" : "checkbox",
 		"title" : "If a pedestrian is in a marked or unmarked crosswalk, you must",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "reduce your speed and proceed with caution.", "a" : 0},
 			{"q" : "stop and wait until the pedestrian has passed.", "a" : 1},
@@ -119,7 +119,7 @@ const AppPracticeOne = (function() {
 		q10 = {
 		"type" : "checkbox",
 		"title" : "A dashed (broken) white line next to your lane means that you can",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "increase your speed.", "a" : 0},
 			{"q" : "change lanes.", "a" : 1},
@@ -132,7 +132,7 @@ const AppPracticeOne = (function() {
 		q11 = {
 		"type" : "checkbox",
 		"title" : "Never pass on a curve or hill where you cannot clearly see the road ahead for",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "at least 500 feet.", "a" : 0},
 			{"q" : "at least 100 feet.", "a" : 0},
@@ -158,7 +158,7 @@ const AppPracticeOne = (function() {
 		q13 = {
 		"type" : "checkbox",
 		"title" : "On urban or town roads, the legal speed limit under ideal driving conditions is _______ unless traffic signs indicate otherwise.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "50 mph", "a" : 0},
 			{"q" : "10 mph", "a" : 0},
@@ -171,7 +171,7 @@ const AppPracticeOne = (function() {
 		q14 = {
 		"type" : "checkbox",
 		"title" : "When a vehicle is properly parallel parked, its wheels on the curb side must be positioned",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "no more than 12 inches from the curb.", "a" : 1},
 			{"q" : "no more than 30 inches from the curb.", "a" : 0},
@@ -184,7 +184,7 @@ const AppPracticeOne = (function() {
 		q15 = {
 		"type" : "checkbox",
 		"title" : "When you wish to change lanes or make a turn, you must _________ to inform other motorists of your intentions.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "signal at least 50 feet in advance", "a" : 0},
 			{"q" : "signal at least 100 feet in advance", "a" : 1},
@@ -197,7 +197,7 @@ const AppPracticeOne = (function() {
 		q16 = {
 		"type" : "checkbox",
 		"title" : "What must you do when you approach or pass a stopped emergency vehicle with its lights flashing on a road with two lanes in your direction?",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "Slow down.", "a" : 0},
 			{"q" : "Stop", "a" : 0},
@@ -210,7 +210,7 @@ const AppPracticeOne = (function() {
 		q17 = {
 		"type" : "checkbox",
 		"title" : "At the end of most entrance ramps on a freeway, you will find _________ that allows you to increase your speed.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "an access ramp", "a" : 0},
 			{"q" : "a slow lane", "a" : 0},
@@ -223,7 +223,7 @@ const AppPracticeOne = (function() {
 		q18 = {
 		"type" : "checkbox",
 		"title" : "When you see a reflective triangular sign on the rear of a vehicle, you should",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "adjust your speed or prepare to change lanes.", "a" : 1},
 			{"q" : "come to a complete stop.", "a" : 0},
@@ -236,7 +236,7 @@ const AppPracticeOne = (function() {
 		q19 = {
 		"type" : "checkbox",
 		"title" : "Anyone who flees a police officer using a motor vehicle may be sentenced to imprisonment for not more than",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "four years and one day.", "a" : 0},
 			{"q" : "three years and one day.", "a" : 1},
@@ -249,7 +249,7 @@ const AppPracticeOne = (function() {
 		q20 = {
 		"type" : "checkbox",
 		"title" : "On a level highway, it takes _________ longer to pass a commercial vehicle than to pass a passenger car.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "2 seconds longer", "a" : 0},
 			{"q" : "1 second longer", "a" : 0},
@@ -262,7 +262,7 @@ const AppPracticeOne = (function() {
 		q21 = {
 		"type" : "checkbox",
 		"title" : "Backing up is not allowed on freeways or expressways EXCEPT for",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "motorcycles.", "a" : 0},
 			{"q" : "slow-moving farm equipment.", "a" : 0},
@@ -275,7 +275,7 @@ const AppPracticeOne = (function() {
 		q22 = {
 		"type" : "checkbox",
 		"title" : "At night, when you are within 1,000 feet of an oncoming vehicle or following another vehicle within 200 feet, you must",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "use high-beam headlights.", "a" : 0},
 			{"q" : "not use your headlights.", "a" : 0},
@@ -288,7 +288,7 @@ const AppPracticeOne = (function() {
 		q23 = {
 		"type" : "checkbox",
 		"title" : "If you are towing a camper or trailer, you must maintain a following distance of at least _________ from other vehicles.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "600 feet", "a" : 0},
 			{"q" : "100 feet", "a" : 0},
@@ -314,7 +314,7 @@ const AppPracticeOne = (function() {
 		q25 = {
 		"type" : "checkbox",
 		"title" : "When making a right turn, look right and left, yield the right-of-way, and turn the steering wheel with",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "the single-hand technique.", "a" : 0},
 			{"q" : "the double-hand technique.", "a" : 0},
@@ -340,7 +340,7 @@ const AppPracticeOne = (function() {
 		q27 = {
 		"type" : "checkbox",
 		"title" : "Which of the following activities is illegal for provisional license holders to perform on their cell phones while driving?",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "a) Texting", "a" : 0},
 			{"q" : "b) Having a conversation", "a" : 0},
@@ -353,7 +353,7 @@ const AppPracticeOne = (function() {
 		q28 = {
 		"type" : "checkbox",
 		"title" : "When you see a school bus stopped with its red lights flashing and its stop arm extended, you must _________ unless it is stopped on the opposite side of a separated (divided) roadway.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "change lanes and proceed with caution", "a" : 0},
 			{"q" : "stop at least 20 feet from the bus", "a" : 1},
@@ -366,7 +366,7 @@ const AppPracticeOne = (function() {
 		q29 = {
 		"type" : "checkbox",
 		"title" : "You must maintain a safe distance between your vehicle and the vehicle in front of you by using",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "the four-second rule.", "a" : 0},
 			{"q" : "the three-second rule.", "a" : 1},
@@ -379,7 +379,7 @@ const AppPracticeOne = (function() {
 		q30 = {
 		"type" : "checkbox",
 		"title" : "You are in an intersection. An emergency vehicle displaying flashing red lights and sounding a siren or bell is approaching. What should you do?",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "Pull over to the right in the intersection.", "a" : 0},
 			{"q" : "Pull over to the left in the intersection.", "a" : 0},
@@ -392,7 +392,7 @@ const AppPracticeOne = (function() {
 		q31 = {
 		"type" : "checkbox",
 		"title" : "If you are driving slower than other traffic on a highway or freeway, stay in the lane",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "nearest to the right side of the road.", "a" : 1},
 			{"q" : "nearest to the center of the road.", "a" : 0},
@@ -405,7 +405,7 @@ const AppPracticeOne = (function() {
 		q32 = {
 		"type" : "checkbox",
 		"title" : "When two vehicles reach an intersection at the same time and there is no traffic light or signal there,",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "the heavier vehicle has the right-of-way.", "a" : 0},
 			{"q" : "the vehicle on the right must yield to the vehicle on the left.", "a" : 0},
@@ -418,7 +418,7 @@ const AppPracticeOne = (function() {
 		q33 = {
 		"type" : "checkbox",
 		"title" : "Minnesota's basic speed law requires you to drive _________ under existing conditions.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "at a speed faster than is reasonable", "a" : 0},
 			{"q" : "at a speed of 70 mph", "a" : 0},
@@ -457,7 +457,7 @@ const AppPracticeOne = (function() {
 		q36 = {
 		"type" : "checkbox",
 		"title" : "An __________ is the connection of a freeway to a road or another freeway through a series of ramps.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "interchange", "a" : 1},
 			{"q" : "exit ramp", "a" : 0},
@@ -470,7 +470,7 @@ const AppPracticeOne = (function() {
 		q37 = {
 		"type" : "checkbox",
 		"title" : "If a blind pedestrian is waiting at a crosswalk with a white cane or a guide dog,",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "use your horn to alert them to your presence.", "a" : 0},
 			{"q" : "reduce your speed and proceed slowly.", "a" : 0},
@@ -483,7 +483,7 @@ const AppPracticeOne = (function() {
 		q38 = {
 		"type" : "checkbox",
 		"title" : "When another driver is trying to pass you, you should",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "stay in your lane and increase your speed.", "a" : 0},
 			{"q" : "stay in your own lane and not increase your speed.", "a" : 1},
@@ -496,7 +496,7 @@ const AppPracticeOne = (function() {
 		q39 = {
 		"type" : "checkbox",
 		"title" : "You are more likely to survive a car crash if you use _________ together.",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "the lap belt and a helmet", "a" : 0},
 			{"q" : "the lap belt and shoulder belt", "a" : 1},
@@ -509,7 +509,7 @@ const AppPracticeOne = (function() {
 		q40 = {
 		"type" : "checkbox",
 		"title" : "Partial hydroplaning of a typical passenger car can start at speeds as low as",
-		"src" : "sign_blank.svg",
+		"src" : "sign_blank.png",
 		"choices" : [
 			{"q" : "55 mph.", "a" : 0},
 			{"q" : "45 mph.", "a" : 0},
