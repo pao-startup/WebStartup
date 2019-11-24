@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pao Sorn Im">
+    <title>Minnesota DVS Permit Practice Test 2019 | MN</title>
+
+    <!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  
+	  input[type=checkbox] {
+		  /* Double-sized Checkboxes */
+		  -ms-transform: scale(3); /* IE */
+		  -moz-transform: scale(3); /* FF */
+		  -webkit-transform: scale(3); /* Safari and Chrome */
+		  -o-transform: scale(3); /* Opera */
+		  padding: 10px;
+		}
+	  
+	  .practice-test-title {font-size: 2.125rem;}
+	  .practice-test-btn {font-size: 1.5rem;}
+	  .practice-test-show {display: inline-block;}
+	  .practice-test-hide {display: none;}
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+</head>
+<body>
+
+
+<div class="container">
+  <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark">
+    <div class="col px-0">
+      <h1 class="display-4 font-italic">Minnesota DVS Permit Practice Test 2019 | MN</h1>
+    </div>
+  </div>
+</div>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col blog-main">
+      <h1 class="btn btn-info practice-test-title">MN DVS Practice Test 1</h1>
+
+      <div class="blog-post" data-q="1">
+        <h2 class="blog-post-title">What does this sign indicate?</h2>
+        <div class="row">
+			<div class="col-md-3">
+				<img src="images/sign_school_zone_ahead.svg" alt="This sign indicates a school zone ahead. Schoolchildren may be crossing the road ahead, so slow down and proceed with caution." style="max-height: 185px;">
+			</div>
+			<div class="col">
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<div class="input-group-text">
+					  <input type="checkbox" value="1">
+					</div>
+				  </div>
+				  <label class="form-control">A school zone</label>
+				</div>
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<div class="input-group-text">
+					  <input type="checkbox" value="0">
+					</div>
+				  </div>
+				  <label class="form-control">A pedestrian crossing</label>
+				</div>
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<div class="input-group-text">
+					  <input type="checkbox" value="0">
+					</div>
+				  </div>
+				  <label class="form-control">A hospital</label>
+				</div>
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<div class="input-group-text">
+					  <input type="checkbox" value="0">
+					</div>
+				  </div>
+				  <label class="form-control">A bus stop</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p id="resultText" class="practice-test-hide">This sign indicates a school zone ahead. Schoolchildren may be crossing the road ahead, so slow down and proceed with caution.</p>
+			</div>
+		</div>
+      </div><!-- /.blog-post -->
+
+      <br/>
+
+      <nav class="blog-pagination">
+        <a id="backQuestion" class="btn btn-outline-secondary practice-test-btn practice-test-hide" data-q="0">Back Question</a>
+        <a id="nextQuestion" class="btn btn-outline-primary practice-test-btn disabled" data-q="1">Next Question</a>
+      </nav>
+
+	  <br/>
+
+      <nav class="blog-pagination practice-test-hide">
+        <a id="backPracticeTest" class="btn btn-outline-secondary practice-test-btn"  data-q="0">Back MN DVS Practice Test</a>
+        <a id="nextPracticeTest" class="btn btn-outline-primary practice-test-btn"  data-q="1">Next MN DVS Practice Test</a>
+      </nav>
+
+	  <br/>
+	  <br/>
+
+    </div><!-- /.blog-main -->
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/util.js"></script>
+<script>
+$(document).ready(function() {
+	let q1 = {
+		"title" : "What does this sign indicate?",
+		"src" : "sign_school_zone_ahead.svg",
+		"choices" : [
+			{"q" : "A school zone", "a" : 1},
+			{"q" : "A pedestrian crossing", "a" : 0},
+			{"q" : "A hospital", "a" : 0},
+			{"q" : "A bus stop", "a" : 0},
+			],
+		"hint" : "This sign indicates a school zone ahead. Schoolchildren may be crossing the road ahead, so slow down and proceed with caution."
+		},
+		q2 = {
+		"title" : "A center lane between opposing lanes of traffic may be designated for",
+		"src" : "sign_left_turns_only.svg",
+		"choices" : [
+			{"q" : "right turns only.", "a" : 0},
+			{"q" : "passing", "a" : 0},
+			{"q" : "left turns only.", "a" : 1},
+			{"q" : "all of the above.", "a" : 0},
+			],
+		"hint" : "A center lane between lanes of traffic traveling in opposite directions may be designated for left turns only. This type of lane is marked by parallel solid and dashed yellow lines and is sometimes accompanied by white arrows on the pavement."
+		};
+	let practices = [
+		{"p1" : [q1, q2]},
+		{"p2" : [q1, q2]}
+	];
+	/*for (let i in practices) {
+		console.log('Practice: ' + i);
+		let practice = practices[i];
+		for (let j in practice) {
+			console.log('questions: ' + j);
+			let questions = practice[j];
+			for (let q in questions) {
+				console.log(questions[q].title);
+				let choices = questions[q].choices;
+				for (let c in choices) {
+					console.log(choices[c].q);
+					console.log(choices[c].a);
+				}
+			}
+		}
+	}*/
+	function displayPracticeTest(practices, practiceIndex, questionIndex) {
+		if (!Util.isValidArray(practices)) {
+			alert('No Practice Test!');
+			return;
+		}
+		let practice = practices[practiceIndex],
+			practicePropertyName = "p" + (practiceIndex + 1);
+		if (!Util.isValidObjectKey(practice, practicePropertyName)) {
+			alert('There is no ' + practicePropertyName + ' property!');
+			return;
+		}
+		let questions = practice[practicePropertyName];
+		console.log(questions[questionIndex]);
+	}
+	displayPracticeTest(practices, 0, 0);
+	$("input[type=checkbox]").click(function() {
+		let value = $(this).val(),
+			checked = $(this).prop("checked");
+		$('input:checkbox').prop('checked', false);
+		$(this).prop("checked", checked);
+		if (checked && 1 == value) {
+			let questionNumber = parseInt($('.blog-post').data('q'));
+			$('#nextQuestion').removeClass('disabled');
+			$('#resultText').removeClass('practice-test-hide').addClass("practice-test-show");
+			$('input:checkbox').prop("disabled", true);
+			if (questionNumber > 1) {
+				$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
+			} else {
+				$('#backQuestion').removeClass('practice-test-show').addClass('practice-test-hide');
+			}
+		} else {
+			$('#nextQuestion').removeClass('disabled').addClass('disabled');
+			$('input:checkbox').prop("disabled", false);
+			$('#resultText').removeClass('practice-test-show').addClass("practice-test-hide");
+		}
+	});
+});
+</script>
+</body>
+</html>
