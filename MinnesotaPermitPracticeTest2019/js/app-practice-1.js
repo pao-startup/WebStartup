@@ -293,7 +293,7 @@ const AppPracticeOne = (function() {
 			{"q" : "600 feet", "a" : 0},
 			{"q" : "100 feet", "a" : 0},
 			{"q" : "200 feet", "a" : 0},
-			{"q" : "500 feet", "a" : 0},
+			{"q" : "500 feet", "a" : 1},
 			],
 		"hint" : "More than 450 feet.",
 		"result" : "If you are towing a camper or trailer, you must maintain a following distance of at least 500 feet from other vehicles."
