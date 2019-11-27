@@ -195,7 +195,7 @@ $(document).ready(function() {
 		if (AppData.Q_IMG_SRC_BLANK == question.src) {
 			$('#qImgBlog').removeClass('practice-test-show').addClass('practice-test-hide');
 		} else {
-			$('#qImgBlog').removeClass('practice-test-show').addClass('practice-test-hide');
+			$('#qImgBlog').removeClass('practice-test-hide').addClass('practice-test-show');
 		}
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
 		if ('checkbox' == question.type) {
