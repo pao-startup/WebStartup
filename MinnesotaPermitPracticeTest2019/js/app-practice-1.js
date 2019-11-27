@@ -1,6 +1,6 @@
 const AppPracticeOne = (function() {
 	let q1 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign indicate?",
 		"src" : "sign_school_zone_ahead.svg",
 		"choices" : [
@@ -13,7 +13,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign indicates a school zone ahead. Schoolchildren may be crossing the road ahead, so slow down and proceed with caution."
 		},
 		q2 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "A center lane between opposing lanes of traffic may be designated for",
 		"src" : "sign_left_turns_only.svg",
 		"choices" : [
@@ -26,7 +26,7 @@ const AppPracticeOne = (function() {
 		"result" : "A center lane between lanes of traffic traveling in opposite directions may be designated for left turns only. This type of lane is marked by parallel solid and dashed yellow lines and is sometimes accompanied by white arrows on the pavement."
 		},
 		q3 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_Y_intersection.svg",
 		"choices" : [
@@ -39,7 +39,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign indicates a Y-intersection. The road ahead splits into two different directions. Be prepared for traffic crossing in your path and prepare to turn in one direction or the other."
 		},
 		q4 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "While driving a car equipped with airbags, do not place your hands on the steering wheel at __________ positions.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -52,7 +52,7 @@ const AppPracticeOne = (function() {
 		"result" : "While driving a vehicle equipped with airbags, try to maintain at least 10 inches between yourself and the steering wheel. Keep your hands at the 8 and 4 o'clock positions or the 9 and 3 o'clock positions on the steering wheel. Avoid the 10 and 2 o'clock positions. Airbags deploy at very high speed. If your hands are high on the steering wheel, the airbag could drive your hands right into your face or even severely injure your hands."
 		},
 		q5 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "This hand signal indicates that the driver intends to",
 		"src" : "sign_hand_sign_right_turns.svg",
 		"choices" : [
@@ -65,7 +65,7 @@ const AppPracticeOne = (function() {
 		"result" : "In Minnesota during daylight hours, drivers may use hand and arm signals in addition to, or instead of, turn signals. This hand signal indicates that the driver intends to turn right."
 		},
 		q6 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_T_intersection.svg",
 		"choices" : [
@@ -78,7 +78,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign indicates a T-intersection. The road you are traveling on will end soon. Prepare to turn right or left after yielding to cross traffic."
 		},
 		q7 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When passing another vehicle, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -91,7 +91,7 @@ const AppPracticeOne = (function() {
 		"result" : "When passing another vehicle, you must return to the right side of the road before coming within 100 feet of an oncoming vehicle. (Even that legal minimum distance is cutting it rather close. If your vehicle and the oncoming vehicle are each traveling at 40 mph, the two vehicles will close a 100-foot distance between them in less than one second before they collide head-on.)"
 		},
 		q8 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If a pedestrian is in a marked or unmarked crosswalk, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -104,7 +104,7 @@ const AppPracticeOne = (function() {
 		"result" : "Yield the right-of-way to pedestrians crossing at intersections and crosswalks. When a pedestrian is in a marked or unmarked crosswalk, you are required to stop and wait until the pedestrian has passed your lane."
 		},
 		q9 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign indicate?",
 		"src" : "sign_workers_performing_maintenance_roadway.svg",
 		"choices" : [
@@ -117,7 +117,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign indicates that workers are performing maintenance on the roadway. Slow down and move into a lane far away from the workers."
 		},
 		q10 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "A dashed (broken) white line next to your lane means that you can",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -130,7 +130,7 @@ const AppPracticeOne = (function() {
 		"result" : "A dashed (broken) white line next to your lane means that you can cross the line to change lanes."
 		},
 		q11 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Never pass on a curve or hill where you cannot clearly see the road ahead for",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -143,7 +143,7 @@ const AppPracticeOne = (function() {
 		"result" : "Use extra caution when passing at night, when visibility is poor, and when the road is slippery. You must not pass on a curve or hill where you cannot clearly see the road ahead for at least 700 feet."
 		},
 		q12 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_railroad_crossing_ahead.svg",
 		"choices" : [
@@ -156,7 +156,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign warns you that a railroad crossing is ahead. Proceed with caution, look both ways for approaching trains, and prepare to stop if necessary."
 		},
 		q13 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "On urban or town roads, the legal speed limit under ideal driving conditions is _______ unless traffic signs indicate otherwise.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -169,7 +169,7 @@ const AppPracticeOne = (function() {
 		"result" : "On urban or town roads, the legal speed limit under ideal driving conditions is 30 mph unless traffic signs indicate otherwise."
 		},
 		q14 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When a vehicle is properly parallel parked, its wheels on the curb side must be positioned",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -182,7 +182,7 @@ const AppPracticeOne = (function() {
 		"result" : "If a vehicle is properly parallel parked, its wheels on the curb side will be positioned no more than 12 inches from the curb."
 		},
 		q15 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When you wish to change lanes or make a turn, you must _________ to inform other motorists of your intentions.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -195,7 +195,7 @@ const AppPracticeOne = (function() {
 		"result" : "If you wish to change lanes or make a turn, you must signal at least 100 feet in advance to inform other motorists of your intentions. (At 40 mph, a vehicle will travel 100 feet in less than two seconds.)"
 		},
 		q16 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "What must you do when you approach or pass a stopped emergency vehicle with its lights flashing on a road with two lanes in your direction?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -208,7 +208,7 @@ const AppPracticeOne = (function() {
 		"result" : "According to MN's Move Over Law, if you approach a stopped emergency vehicle with its lights flashing on a road with two lanes in your direction, move into the lane that is farthest from the stopped emergency vehicle if possible. If this is impossible (perhaps there aren't two or more lanes in your direction), reduce your speed and proceed with caution."
 		},
 		q17 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "At the end of most entrance ramps on a freeway, you will find _________ that allows you to increase your speed.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -221,7 +221,7 @@ const AppPracticeOne = (function() {
 		"result" : "At the end of most entrance ramps on freeways, you will find an acceleration lane that lets you increase your speed to the speed of highway traffic before you merge."
 		},
 		q18 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When you see a reflective triangular sign on the rear of a vehicle, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -234,7 +234,7 @@ const AppPracticeOne = (function() {
 		"result" : "A reflective triangular emblem on the rear of a vehicle identifies it as a slow-moving vehicle, which Minnesota defines as a vehicle that cannot exceed 30 mph. (Such vehicles include horse-drawn vehicles and certain farm equipment.) When you approach one of these vehicles, slow down or prepare to change lanes."
 		},
 		q19 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Anyone who flees a police officer using a motor vehicle may be sentenced to imprisonment for not more than",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -247,7 +247,7 @@ const AppPracticeOne = (function() {
 		"result" : "In Minnesota, using a motor vehicle to flee a police officer on official duty is a felony. The penalty is imprisonment for not more than three years and one day, a fine of not more than $5,000, or both."
 		},
 		q20 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "On a level highway, it takes _________ longer to pass a commercial vehicle than to pass a passenger car.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -260,7 +260,7 @@ const AppPracticeOne = (function() {
 		"result" : "On a level highway, it takes three to five seconds longer to pass a commercial vehicle than to pass a car. Allow enough time to pass the commercial vehicle and return to the right lane before coming within 100 feet of approaching traffic."
 		},
 		q21 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Backing up is not allowed on freeways or expressways EXCEPT for",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -273,7 +273,7 @@ const AppPracticeOne = (function() {
 		"result" : "Backing up is not allowed on freeways or expressways, except for emergency vehicles in the course of duty. If you back up on a freeway or expressway, you risk getting hit by another vehicle or getting ticketed for careless or reckless driving."
 		},
 		q22 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "At night, when you are within 1,000 feet of an oncoming vehicle or following another vehicle within 200 feet, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -286,7 +286,7 @@ const AppPracticeOne = (function() {
 		"result" : "At night, when you are within 1,000 feet of an oncoming vehicle or following another vehicle within 200 feet, you must dim your headlights. High beams can distract the driver of the vehicle ahead of you because they can reflect off the vehicle's rear-view mirror. High beams can blind the driver of an oncoming vehicle."
 		},
 		q23 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you are towing a camper or trailer, you must maintain a following distance of at least _________ from other vehicles.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -299,7 +299,7 @@ const AppPracticeOne = (function() {
 		"result" : "If you are towing a camper or trailer, you must maintain a following distance of at least 500 feet from other vehicles."
 		},
 		q24 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_sharp_curve_right_ahead.svg",
 		"choices" : [
@@ -312,7 +312,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign means that a sharp curve to the right is ahead. Slow down to a safe speed."
 		},
 		q25 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When making a right turn, look right and left, yield the right-of-way, and turn the steering wheel with",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -325,7 +325,7 @@ const AppPracticeOne = (function() {
 		"result" : "When making a right turn, look right and left, yield the right-of-way, and turn the steering wheel hand-over-hand to complete the turn in the lane next to the curb."
 		},
 		q26 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "If you see a steady yellow light as you approach an intersection, you must",
 		"src" : "sign_steady_yellow_signal_warns.svg",
 		"choices" : [
@@ -338,7 +338,7 @@ const AppPracticeOne = (function() {
 		"result" : "A steady yellow signal warns you that the signal is about to change to red. If you are approaching the intersection, you must stop if you can do so safely. If not, you should proceed with caution."
 		},
 		q27 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Which of the following activities is illegal for provisional license holders to perform on their cell phones while driving?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -351,7 +351,7 @@ const AppPracticeOne = (function() {
 		"result" : "Provisional license holders may not use a cell phone while driving, not even a hands-free cell phone."
 		},
 		q28 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When you see a school bus stopped with its red lights flashing and its stop arm extended, you must _________ unless it is stopped on the opposite side of a separated (divided) roadway.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -364,7 +364,7 @@ const AppPracticeOne = (function() {
 		"result" : "If you see a school bus is stopped with its red lights flashing and its stop arm extended, you must stop at least 20 feet from the bus. However, you are not required to stop for a school bus with its red lights flashing if it is on the opposite side of a separated (divided) roadway."
 		},
 		q29 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "You must maintain a safe distance between your vehicle and the vehicle in front of you by using",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -377,7 +377,7 @@ const AppPracticeOne = (function() {
 		"result" : "You must maintain a safe distance between your vehicle and the vehicle in front of you. Using the three-second rule will help you maintain a safe following distance. In the three-second rule, at least three seconds must elapse from when the vehicle in front of you passes some fixed object to when your vehicle reaches that same object."
 		},
 		q30 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "You are in an intersection. An emergency vehicle displaying flashing red lights and sounding a siren or bell is approaching. What should you do?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -390,7 +390,7 @@ const AppPracticeOne = (function() {
 		"result" : "When an emergency vehicle (ambulance, fire truck, police car, etc.) displaying flashing red lights and sounding a siren or bell approaches your vehicle on a two-way road, you must pull to the right and stop. If you are traveling on a one-way road, you must pull to whichever side is nearest and stop. However, you must not block an intersection even if there is an emergency vehicle approaching. If you are in an intersection, proceed through it and then pull over. Remain stopped until all emergency vehicles have passed."
 		},
 		q31 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you are driving slower than other traffic on a highway or freeway, stay in the lane",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -403,7 +403,7 @@ const AppPracticeOne = (function() {
 		"result" : "Maintain the same approximate speed as surrounding vehicles when possible, but don't exceed the posted speed limits. If you are driving slower than other traffic, stay in the lane nearest to the right side of the road."
 		},
 		q32 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When two vehicles reach an intersection at the same time and there is no traffic light or signal there,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -416,7 +416,7 @@ const AppPracticeOne = (function() {
 		"result" : "When two vehicles reach an uncontrolled intersection (i.e., one without signs or signals) at about the same time, the vehicle on the left must yield to the vehicle on the right."
 		},
 		q33 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Minnesota's basic speed law requires you to drive _________ under existing conditions.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -429,7 +429,7 @@ const AppPracticeOne = (function() {
 		"result" : "Minnesota's basic speed law requires you to drive at a speed no faster than is reasonable under current conditions. These include weather, traffic, and road conditions. (A number of other states have similar laws.) You can be ticketed for driving too fast for current conditions even if you aren't exceeding the posted speed limit."
 		},
 		q34 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_slippery_when_wet.svg",
 		"choices" : [
@@ -442,7 +442,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign means that the road is slippery when wet. In wet weather, slow down, increase your following distance, and avoid sudden maneuvers or hard braking. These signs are often posted at bridges and overpasses."
 		},
 		q35 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_bridge_ahead_narrow.svg",
 		"choices" : [
@@ -455,7 +455,7 @@ const AppPracticeOne = (function() {
 		"result" : "This sign indicates that the roadway on the bridge ahead is narrow. Slow down and proceed with caution."
 		},
 		q36 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "An __________ is the connection of a freeway to a road or another freeway through a series of ramps.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -468,7 +468,7 @@ const AppPracticeOne = (function() {
 		"result" : "An interchange is a road junction where two or more roads cross over one another (i.e., at different levels) so as not to impede one another's traffic flow. Instead, the roads are connected through a series of connecting ramps. These ramps allow you to leave one road and enter another one safely, without disrupting the flow of traffic. There are diamond, cloverleaf, and folded diamond interchanges, among others."
 		},
 		q37 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If a blind pedestrian is waiting at a crosswalk with a white cane or a guide dog,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -481,7 +481,7 @@ const AppPracticeOne = (function() {
 		"result" : "You must yield the right-of-way to a blind pedestrian. Don't use your horn or rev your engine because it might startle the pedestrian or guide dog."
 		},
 		q38 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When another driver is trying to pass you, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -494,7 +494,7 @@ const AppPracticeOne = (function() {
 		"result" : "Look behind you to determine whether other drivers are preparing to pass you. When another driver is trying to pass you, stay in your own lane and do not increase your speed."
 		},
 		q39 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "You are more likely to survive a car crash if you use _________ together.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -507,7 +507,7 @@ const AppPracticeOne = (function() {
 		"result" : "You are more likely to survive a car crash if you use the lap and shoulder belts together. The lap belt should be adjusted to fit snugly across your hipbones or upper thighs. It should never be positioned across the abdomen or the soft part of your stomach. The shoulder belt should be fitted snugly across your chest and the middle of your shoulder."
 		},
 		q40 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Partial hydroplaning of a typical passenger car can start at speeds as low as",
 		"src" : "sign_blank.png",
 		"choices" : [

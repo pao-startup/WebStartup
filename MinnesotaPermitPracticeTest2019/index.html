@@ -26,7 +26,7 @@
           font-size: 3.5rem;
         }
       }
-	  
+
 	  input[type=checkbox] {
 		  -ms-transform: scale(3); /* IE */
 		  -moz-transform: scale(3); /* FF */
@@ -34,11 +34,12 @@
 		  -o-transform: scale(3); /* Opera */
 		  padding: 10px;
 		}
-	  .practice-test-hint {color: #9a9a9c;}
-	  .practice-test-title {font-size: 2.125rem;}
-	  .practice-test-btn {font-size: 1.5rem;}
-	  .practice-test-show {display: inline-block;}
-	  .practice-test-hide {display: none;}
+		.practice-test-label {color: #000000;}
+		.practice-test-hint {color: #9a9a9c;}
+		.practice-test-title {font-size: 2.125rem;}
+		.practice-test-btn {font-size: 1.5rem;}
+		.practice-test-show {display: inline-block;}
+		.practice-test-hide {display: none;}
     </style>
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
@@ -47,7 +48,7 @@
 <body>
 
 
-<div class="container">
+<div class="container practice-test-hide">
   <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark">
     <div class="col px-0">
       <h1 class="display-4 font-italic">Minnesota DVS Permit Practice Test 2019 | MN</h1>
@@ -114,7 +115,7 @@
 <script src="js/app-data.js"></script>
 <script>
 $(document).ready(function() {
-	function displayQuestionCheckbox(choices) {
+	function displayQuestionChoices(choices) {
 		if (!Util.isValidArray(choices)) {
 			alert('No Choice for this Question!');
 			return;
@@ -198,11 +199,7 @@ $(document).ready(function() {
 			$('#qImgBlog').removeClass('practice-test-hide').addClass('practice-test-show');
 		}
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
-		if ('checkbox' == question.type) {
-			displayQuestionCheckbox(question.choices);
-		} else {
-			alert('No Question!');
-		}
+		displayQuestionChoices(question.choices);
 	}
 	displayPracticeTest(0, 0);
 	$('#nextQuestion').click(function() {

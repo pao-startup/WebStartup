@@ -1,6 +1,6 @@
 const AppPracticeTwo = (function() {
 	let q1 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Work zone or construction zone signs usually have",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -13,7 +13,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Construction, maintenance, or emergency operations signs typically have black letters or symbols on an orange background. They warn drivers that people are working on or near the roadway."
 		},
 		q2 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When should you switch on your high-beam headlights?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -26,7 +26,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Use your high beams on unfamiliar roads, in construction areas, or where there may be people alongside the road and where there are no oncoming vehicles. High beams let you see twice as far as low beams. However, use low beams when driving in fog, rain, or snow because they can reflect the high beams back and cause glare."
 		},
 		q3 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "A double solid yellow line in the center of the road means that",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -39,7 +39,7 @@ const AppPracticeTwo = (function() {
 		"result" : "A double solid yellow line marks the center of a road and separates opposing lanes of traffic. Passing is not allowed in either direction. Drivers may not cross a double solid yellow line unless they are making a left turn onto or off the road."
 		},
 		q4 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When approaching pedestrians who are walking on or crossing the roadway, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -52,7 +52,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Pedestrians have the right-of-way. When approaching pedestrians who are walking on or crossing the roadway, you must slow down, yield, and be prepared to stop."
 		},
 		q5 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If a pedestrian is in a marked or unmarked crosswalk, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -65,7 +65,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Yield the right-of-way to pedestrians crossing at intersections and crosswalks. When a pedestrian is in a marked or unmarked crosswalk, you must stop and wait until the pedestrian has passed your lane."
 		},
 		q6 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Proactively looking ahead, to the sides, and behind your vehicle to anticipate problems ahead is part of",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -78,7 +78,7 @@ const AppPracticeTwo = (function() {
 		"result" : "The National Safety Council defines defensive driving as \"driving to save lives, time, and money, in spite of the conditions around you and the actions of others.\" Defensive driving is about anticipating potentially dangerous situations in advance, including driving conditions and mistakes made by others, and planning how to deal with those situations. To be a defensive driver, you must know what is happening around your vehicle. You must look ahead, to the sides, and behind the vehicle. You owe it to yourself to become a defensive driver."
 		},
 		q7 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Diagonal yellow stripes painted on some streets and highways indicate",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -91,7 +91,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Diagonal yellow striping on streets and highways indicates a narrow road or an obstruction ahead."
 		},
 		q8 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When you find both a solid and a dashed (broken) yellow line between opposing lanes of traffic, you must NOT pass",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -104,7 +104,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Where there are both a solid yellow line and a dashed (broken) yellow line separating opposing lanes, you must not pass if the solid yellow line is on your side."
 		},
 		q9 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "At railroad crossings that are only marked with a stop sign, you should stop and then proceed only when",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -117,7 +117,7 @@ const AppPracticeTwo = (function() {
 		"result" : "At crossings marked with automatic flasher units or automatic crossing gates, you must stop if the lights are flashing or the gates are lowered, and you must remain stopped until the lights stop flashing and the gates are raised. At crossings that are only marked with a stop sign, you must stop and then proceed only when you determine that no train is approaching. Make sure you yield to pedestrians at the crossing and that there is enough room for your vehicle on the opposite side of the crossing."
 		},
 		q10 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Large flashing or sequencing arrow panels may be used in work zones in both day and night to",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -130,7 +130,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Large flashing or sequencing arrow panels may be used in work zones in both day and night to guide drivers into certain traffic lanes. These panels are placed on the roadway or mounted on vehicles to advise approaching motorists of lane closures. Drivers may have to merge into other lanes."
 		},
 		q11 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you are driving on a two-lane road, it is safest to drive your vehicle _______ of your lane.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -143,7 +143,7 @@ const AppPracticeTwo = (function() {
 		"result" : "It is safest to drive in the center of your lane. Keep as much space as you can between your vehicle and oncoming vehicles."
 		},
 		q12 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "A flashing yellow arrow means",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -156,7 +156,7 @@ const AppPracticeTwo = (function() {
 		"result" : "A flashing yellow arrow means you may proceed with caution in the direction of the arrow. Before doing so, however, you must yield the right-of-way to vehicles and pedestrians already in the intersection. If you are turning left, you must first yield the right-of-way to oncoming vehicles."
 		},
 		q13 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "You may pass another vehicle if there is a _________ on your side.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -169,7 +169,7 @@ const AppPracticeTwo = (function() {
 		"result" : "You may pass another vehicle if there is a dashed (broken) line on your side."
 		},
 		q14 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "To guard against glare from the headlights of a vehicle behind you, use __________ and adjust it before you drive.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -182,7 +182,7 @@ const AppPracticeTwo = (function() {
 		"result" : "To guard against glare from the headlights of a vehicle behind you, use a day/night mirror. Adjust it before you drive."
 		},
 		q15 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "At night, drivers should use high-beam headlights",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -195,7 +195,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Use high beams when driving in open country without other vehicles nearby. However, even high beams don't let you see as far at night as you can in the daytime. Therefore, you should still drive slower at night."
 		},
 		q16 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "On multilane roads, you should avoid driving alongside other vehicles because",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -208,7 +208,7 @@ const AppPracticeTwo = (function() {
 		"result" : "On multilane roads, avoid driving next to other vehicles. Someone may crowd your lane or try to change lanes and pull into you."
 		},
 		q17 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you double your speed on a highway, your braking distance increases by",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -221,7 +221,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you double your speed, your braking distance will be four times as long."
 		},
 		q18 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this sign mean?",
 		"src" : "sign_terminating_road_some_T_intersections.svg",
 		"choices" : [
@@ -234,7 +234,7 @@ const AppPracticeTwo = (function() {
 		"result" : "You may see this sign at the terminating road of some T-intersections. It means that you must yield the right-of-way or stop before turning right or left."
 		},
 		q19 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Before changing lanes, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -247,7 +247,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Before changing lanes, you should check your mirrors and then check your blind spot by looking over your shoulder toward the rear."
 		},
 		q20 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this device mean?",
 		"src" : "sign_railroad_control_systems_warn.svg",
 		"choices" : [
@@ -260,7 +260,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Active railroad control systems warn drivers of the approach of a train. They employ some combination of signs, signals, lift gates, and bells or other audible warnings. Stop when the bell is ringing or the lights are flashing. Never attempt to go past until the train has passed and the warnings have ceased."
 		},
 		q21 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "What does this picture illustrate?",
 		"src" : "sign_dashed_broken_line_next.svg",
 		"choices" : [
@@ -273,7 +273,7 @@ const AppPracticeTwo = (function() {
 		"result" : "When there is a dashed (broken) line next to your lane, you may cross it to pass another vehicle if it is safe to do so."
 		},
 		q22 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you want to change several lanes on a multilane highway,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -286,7 +286,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you want to change several lanes, change them one at a time to reduce the risk of an accident."
 		},
 		q23 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Rumble strips use vibration and sound to alert drowsy or inattentive drivers that they are",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -299,7 +299,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Rumble strips are a series of indented elements installed on a paved roadway shoulder near the travel lane, on a two-lane roadway near the center line, or in a lane of traffic approaching a stop sign or signal. Rumble strips are intended to alert drowsy or inattentive drivers through vibration and sound that their vehicles have left the travel lane or are approaching a stop sign or signal."
 		},
 		q24 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "On a divided highway, you must _________ unless directed to do otherwise by a sign, traffic control device, or police officer.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -312,7 +312,7 @@ const AppPracticeTwo = (function() {
 		"result" : "On a divided highway, keep right of the median unless directed to do otherwise by a sign, traffic control device, or police officer."
 		},
 		q25 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When you see a triangular road sign, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -325,7 +325,7 @@ const AppPracticeTwo = (function() {
 		"result" : "A yield sign is triangular in shape. It indicates that you must slow down and yield to other traffic."
 		},
 		q26 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When entering a main road from a private road, a driveway, or a parking lot, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -338,7 +338,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you are entering a main road from a private road, a driveway, or a parking lot, you must stop and then yield to pedestrians and other vehicles before you may proceed."
 		},
 		q27 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "On interstate highways, slower vehicles should travel _________ except when passing.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -351,7 +351,7 @@ const AppPracticeTwo = (function() {
 		"result" : "On interstate highways, slower vehicles should travel in the rightmost lane except when passing."
 		},
 		q28 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Which of these statements is FALSE?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -364,7 +364,7 @@ const AppPracticeTwo = (function() {
 		"result" : "You needed to find a FALSE statement. Only make a U-turn where it is safe. Don't make a U-turn on a curve or near the crest of a hill because your vehicle may not be seen by other drivers. Some towns and cities do not allow U-turns. Never make a U-turn at a location that is marked with a \"No U-Turn\" sign or at an intersection controlled by a traffic signal or police officer."
 		},
 		q29 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "If you see this sign, you should",
 		"src" : "sign_slippery_when_wet.svg",
 		"choices" : [
@@ -377,7 +377,7 @@ const AppPracticeTwo = (function() {
 		"result" : "This sign means that the road is slippery when wet. In wet weather, slow down, increase your following distance, and avoid sudden maneuvers or hard braking. These signs are often posted at bridges and overpasses."
 		},
 		q30 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If there are no reduced speed limits posted at work zones, drivers should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -390,7 +390,7 @@ const AppPracticeTwo = (function() {
 		"result" : "In many work zones, speed limits may be reduced and lane usage may be restricted for safety purposes. If there are no reduced speed limits posted, obey the usual legal speed limit."
 		},
 		q31 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "How do you make a left turn onto a divided highway at a reduced conflict intersection?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -403,7 +403,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Reduced conflict intersections are intended to reduce the number of collisions on four-lane divided highways. In a reduced conflict intersection, drivers always make a right turn, followed by a U-turn. Motorists approaching the divided highway from a side street are not allowed to make left turns or cross traffic; instead, they are required to turn right onto the highway and then make a U-turn at a designated median opening."
 		},
 		q32 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Blind pedestrians may carry _________ canes or use guide dogs.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -416,7 +416,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Blind pedestrians may carry white canes or use guide dogs."
 		},
 		q33 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "At the end of most entrance ramps on a freeway, you will find _________ that allows you to increase your speed.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -429,7 +429,7 @@ const AppPracticeTwo = (function() {
 		"result" : "At the end of most entrance ramps on freeways, you will find an acceleration lane that lets you increase your speed to the speed of highway traffic before you merge."
 		},
 		q34 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you see an oncoming vehicle in your lane, what should you do?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -442,7 +442,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you see a vehicle coming toward you in your lane, brake hard, sound your horn, flash your headlights, and veer as far to the right as you safely can. Don't try to veer to your left. The other driver may suddenly realize his or her mistake and return to his or her proper lane."
 		},
 		q35 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "Signs with black letters on an orange background provide",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -455,7 +455,7 @@ const AppPracticeTwo = (function() {
 		"result" : "Signs with black letters and symbols on an orange background are temporary signs that provide specific information and directions to drivers in work zones."
 		},
 		q36 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When you drive in city traffic, you should try to look at least",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -468,7 +468,7 @@ const AppPracticeTwo = (function() {
 		"result" : "When you drive in city traffic, you should try to look at least one block ahead. In the city, 10 seconds is about one block."
 		},
 		q37 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "When going down a steep hill, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -481,7 +481,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you keep applying the brakes to control your speed on a steep descent, the brakes may fade (lose their effectiveness). Instead, release the gas pedal and shift into a lower gear (even with an automatic transmission). This will generate a braking effect to slow the vehicle, known as engine braking. The lower the gear, the greater the engine braking effect. Apply the brakes only when engine braking is insufficient or you want to stop."
 		},
 		q38 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you are being tailgated, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -494,7 +494,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you are being tailgated, move into the right lane and reduce your speed. Encourage the tailgater to pass you. You will be safer with the tailgater in front of you than right behind you."
 		},
 		q39 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "If you are changing lanes, preparing to pass another vehicle, or entering traffic, signal and check for passing traffic. First, use your mirrors. Then",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -507,7 +507,7 @@ const AppPracticeTwo = (function() {
 		"result" : "If you are changing lanes, preparing to pass another vehicle, or entering traffic, signal and check for passing traffic by using your mirrors. Once the mirrors reveal safe conditions for the lane change, check your vehicle's blind spots by glancing over your shoulder to the rear in the direction of the lane change."
 		},
 		q40 = {
-		"type" : "checkbox",
+		"type" : "picture",
 		"title" : "This sign indicates that",
 		"src" : "sign_must_go_to_either_side.svg",
 		"choices" : [

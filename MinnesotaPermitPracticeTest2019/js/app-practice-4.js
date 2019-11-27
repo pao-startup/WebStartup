@@ -1,6 +1,6 @@
 const AppPracticeFour = (function() {
 	let q1 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -13,7 +13,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q2 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -26,7 +26,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q3 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -39,7 +39,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q4 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -52,7 +52,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q5 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -65,7 +65,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q6 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -78,7 +78,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q7 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -91,7 +91,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q8 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -104,7 +104,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q9 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -117,7 +117,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q10 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -130,7 +130,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q11 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -143,7 +143,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q12 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -156,7 +156,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q13 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -169,7 +169,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q14 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -182,7 +182,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q15 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -195,7 +195,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q16 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -208,7 +208,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q17 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -221,7 +221,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q18 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -234,7 +234,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q19 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -247,7 +247,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q20 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -260,7 +260,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q21 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -273,7 +273,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q22 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -286,7 +286,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q23 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -299,7 +299,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q24 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -312,7 +312,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q25 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -325,7 +325,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q26 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -338,7 +338,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q27 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -351,7 +351,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q28 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -364,7 +364,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q29 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -377,7 +377,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q30 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -390,7 +390,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q31 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -403,7 +403,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q32 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -416,7 +416,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q33 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -429,7 +429,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q34 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -442,7 +442,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q35 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -455,7 +455,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q36 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -468,7 +468,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q37 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -481,7 +481,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q38 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -494,7 +494,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q39 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -507,7 +507,7 @@ const AppPracticeFour = (function() {
 		"result" : ""
 		},
 		q40 = {
-		"type" : "checkbox",
+		"type" : "text",
 		"title" : "",
 		"src" : "sign_blank.png",
 		"choices" : [
