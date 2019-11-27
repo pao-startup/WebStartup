@@ -1,6 +1,7 @@
 const AppData = (function() {
 	const QUESTION_IMAGE_PATH = "images/",
-			PRACTICE_TITLE = "MN DVS Practice Test ";
+		Q_IMG_SRC_BLANK = "sign_blank.png",
+		PRACTICE_TITLE = "MN DVS Practice Test ";
 	let practices = [
 		{"p1" : AppPracticeOne.getPractice() },
 		{"p2" : AppPracticeTwo.getPractice() },
@@ -13,6 +14,7 @@ const AppData = (function() {
 	};
 	return {
 		QUESTION_IMAGE_PATH : QUESTION_IMAGE_PATH,
+		Q_IMG_SRC_BLANK : Q_IMG_SRC_BLANK,
 		PRACTICE_TITLE : PRACTICE_TITLE,
 		getPractices : getPractices
 	};
