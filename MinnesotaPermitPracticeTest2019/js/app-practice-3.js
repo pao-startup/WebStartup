@@ -166,7 +166,7 @@ const AppPracticeThree = (function() {
 			{"q" : "Vehicles entering or crossing a roadway from a private driveway must yield to all oncoming vehicles.", "a" : 0},
 			],
 		"hint" : "Look for a FALSE statement!",
-		"result" : "This statement is FALSE: "At an uncontrolled T-intersection, the vehicle on the through street must yield to the vehicle on the terminating street." The reverse is true: At an uncontrolled T-intersection, the vehicle on the terminating street must yield to vehicles on the through street."
+		"result" : "This statement is FALSE: \"At an uncontrolled T-intersection, the vehicle on the through street must yield to the vehicle on the terminating street.\" The reverse is true: At an uncontrolled T-intersection, the vehicle on the terminating street must yield to vehicles on the through street."
 		},
 		q14 = {
 		"type" : "text",
