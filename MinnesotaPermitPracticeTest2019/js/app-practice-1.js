@@ -1,6 +1,7 @@
 const AppPracticeOne = (function() {
 	let q1 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign indicate?",
 		"src" : "sign_school_zone_ahead.svg",
 		"choices" : [
@@ -14,6 +15,7 @@ const AppPracticeOne = (function() {
 		},
 		q2 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "A center lane between opposing lanes of traffic may be designated for",
 		"src" : "sign_left_turns_only.svg",
 		"choices" : [
@@ -27,6 +29,7 @@ const AppPracticeOne = (function() {
 		},
 		q3 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_Y_intersection.svg",
 		"choices" : [
@@ -40,6 +43,7 @@ const AppPracticeOne = (function() {
 		},
 		q4 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "While driving a car equipped with airbags, do not place your hands on the steering wheel at __________ positions.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -53,6 +57,7 @@ const AppPracticeOne = (function() {
 		},
 		q5 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "This hand signal indicates that the driver intends to",
 		"src" : "sign_hand_sign_right_turns.svg",
 		"choices" : [
@@ -66,6 +71,7 @@ const AppPracticeOne = (function() {
 		},
 		q6 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_T_intersection.svg",
 		"choices" : [
@@ -79,6 +85,7 @@ const AppPracticeOne = (function() {
 		},
 		q7 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When passing another vehicle, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -92,6 +99,7 @@ const AppPracticeOne = (function() {
 		},
 		q8 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If a pedestrian is in a marked or unmarked crosswalk, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -105,6 +113,7 @@ const AppPracticeOne = (function() {
 		},
 		q9 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign indicate?",
 		"src" : "sign_workers_performing_maintenance_roadway.svg",
 		"choices" : [
@@ -118,6 +127,7 @@ const AppPracticeOne = (function() {
 		},
 		q10 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "A dashed (broken) white line next to your lane means that you can",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -131,6 +141,7 @@ const AppPracticeOne = (function() {
 		},
 		q11 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Never pass on a curve or hill where you cannot clearly see the road ahead for",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -144,6 +155,7 @@ const AppPracticeOne = (function() {
 		},
 		q12 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_railroad_crossing_ahead.svg",
 		"choices" : [
@@ -157,6 +169,7 @@ const AppPracticeOne = (function() {
 		},
 		q13 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "On urban or town roads, the legal speed limit under ideal driving conditions is _______ unless traffic signs indicate otherwise.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -170,6 +183,7 @@ const AppPracticeOne = (function() {
 		},
 		q14 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When a vehicle is properly parallel parked, its wheels on the curb side must be positioned",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -183,6 +197,7 @@ const AppPracticeOne = (function() {
 		},
 		q15 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When you wish to change lanes or make a turn, you must _________ to inform other motorists of your intentions.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -196,6 +211,7 @@ const AppPracticeOne = (function() {
 		},
 		q16 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "What must you do when you approach or pass a stopped emergency vehicle with its lights flashing on a road with two lanes in your direction?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -209,6 +225,7 @@ const AppPracticeOne = (function() {
 		},
 		q17 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "At the end of most entrance ramps on a freeway, you will find _________ that allows you to increase your speed.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -222,6 +239,7 @@ const AppPracticeOne = (function() {
 		},
 		q18 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When you see a reflective triangular sign on the rear of a vehicle, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -235,6 +253,7 @@ const AppPracticeOne = (function() {
 		},
 		q19 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Anyone who flees a police officer using a motor vehicle may be sentenced to imprisonment for not more than",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -248,6 +267,7 @@ const AppPracticeOne = (function() {
 		},
 		q20 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "On a level highway, it takes _________ longer to pass a commercial vehicle than to pass a passenger car.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -261,6 +281,7 @@ const AppPracticeOne = (function() {
 		},
 		q21 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Backing up is not allowed on freeways or expressways EXCEPT for",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -274,6 +295,7 @@ const AppPracticeOne = (function() {
 		},
 		q22 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "At night, when you are within 1,000 feet of an oncoming vehicle or following another vehicle within 200 feet, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -287,6 +309,7 @@ const AppPracticeOne = (function() {
 		},
 		q23 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you are towing a camper or trailer, you must maintain a following distance of at least _________ from other vehicles.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -300,6 +323,7 @@ const AppPracticeOne = (function() {
 		},
 		q24 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_sharp_curve_right_ahead.svg",
 		"choices" : [
@@ -313,6 +337,7 @@ const AppPracticeOne = (function() {
 		},
 		q25 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When making a right turn, look right and left, yield the right-of-way, and turn the steering wheel with",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -326,6 +351,7 @@ const AppPracticeOne = (function() {
 		},
 		q26 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "If you see a steady yellow light as you approach an intersection, you must",
 		"src" : "sign_steady_yellow_signal_warns.svg",
 		"choices" : [
@@ -339,6 +365,7 @@ const AppPracticeOne = (function() {
 		},
 		q27 = {
 		"type" : "text",
+		"orderedChoice" : 1,
 		"title" : "Which of the following activities is illegal for provisional license holders to perform on their cell phones while driving?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -352,6 +379,7 @@ const AppPracticeOne = (function() {
 		},
 		q28 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When you see a school bus stopped with its red lights flashing and its stop arm extended, you must _________ unless it is stopped on the opposite side of a separated (divided) roadway.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -365,6 +393,7 @@ const AppPracticeOne = (function() {
 		},
 		q29 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "You must maintain a safe distance between your vehicle and the vehicle in front of you by using",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -378,6 +407,7 @@ const AppPracticeOne = (function() {
 		},
 		q30 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "You are in an intersection. An emergency vehicle displaying flashing red lights and sounding a siren or bell is approaching. What should you do?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -391,6 +421,7 @@ const AppPracticeOne = (function() {
 		},
 		q31 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you are driving slower than other traffic on a highway or freeway, stay in the lane",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -404,6 +435,7 @@ const AppPracticeOne = (function() {
 		},
 		q32 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When two vehicles reach an intersection at the same time and there is no traffic light or signal there,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -417,6 +449,7 @@ const AppPracticeOne = (function() {
 		},
 		q33 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Minnesota's basic speed law requires you to drive _________ under existing conditions.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -430,6 +463,7 @@ const AppPracticeOne = (function() {
 		},
 		q34 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_slippery_when_wet.svg",
 		"choices" : [
@@ -443,6 +477,7 @@ const AppPracticeOne = (function() {
 		},
 		q35 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_bridge_ahead_narrow.svg",
 		"choices" : [
@@ -456,6 +491,7 @@ const AppPracticeOne = (function() {
 		},
 		q36 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "An __________ is the connection of a freeway to a road or another freeway through a series of ramps.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -469,6 +505,7 @@ const AppPracticeOne = (function() {
 		},
 		q37 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If a blind pedestrian is waiting at a crosswalk with a white cane or a guide dog,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -482,6 +519,7 @@ const AppPracticeOne = (function() {
 		},
 		q38 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When another driver is trying to pass you, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -495,6 +533,7 @@ const AppPracticeOne = (function() {
 		},
 		q39 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "You are more likely to survive a car crash if you use _________ together.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -508,6 +547,7 @@ const AppPracticeOne = (function() {
 		},
 		q40 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Partial hydroplaning of a typical passenger car can start at speeds as low as",
 		"src" : "sign_blank.png",
 		"choices" : [

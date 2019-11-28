@@ -1,6 +1,7 @@
 const AppPracticeTwo = (function() {
 	let q1 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Work zone or construction zone signs usually have",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -14,6 +15,7 @@ const AppPracticeTwo = (function() {
 		},
 		q2 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When should you switch on your high-beam headlights?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -27,6 +29,7 @@ const AppPracticeTwo = (function() {
 		},
 		q3 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "A double solid yellow line in the center of the road means that",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -40,6 +43,7 @@ const AppPracticeTwo = (function() {
 		},
 		q4 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When approaching pedestrians who are walking on or crossing the roadway, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -53,6 +57,7 @@ const AppPracticeTwo = (function() {
 		},
 		q5 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If a pedestrian is in a marked or unmarked crosswalk, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -66,6 +71,7 @@ const AppPracticeTwo = (function() {
 		},
 		q6 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Proactively looking ahead, to the sides, and behind your vehicle to anticipate problems ahead is part of",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -79,6 +85,7 @@ const AppPracticeTwo = (function() {
 		},
 		q7 = {
 		"type" : "text",
+		"orderedChoice" : 1,
 		"title" : "Diagonal yellow stripes painted on some streets and highways indicate",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -92,6 +99,7 @@ const AppPracticeTwo = (function() {
 		},
 		q8 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When you find both a solid and a dashed (broken) yellow line between opposing lanes of traffic, you must NOT pass",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -105,6 +113,7 @@ const AppPracticeTwo = (function() {
 		},
 		q9 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "At railroad crossings that are only marked with a stop sign, you should stop and then proceed only when",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -118,6 +127,7 @@ const AppPracticeTwo = (function() {
 		},
 		q10 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Large flashing or sequencing arrow panels may be used in work zones in both day and night to",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -131,6 +141,7 @@ const AppPracticeTwo = (function() {
 		},
 		q11 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you are driving on a two-lane road, it is safest to drive your vehicle _______ of your lane.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -144,6 +155,7 @@ const AppPracticeTwo = (function() {
 		},
 		q12 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "A flashing yellow arrow means",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -157,6 +169,7 @@ const AppPracticeTwo = (function() {
 		},
 		q13 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "You may pass another vehicle if there is a _________ on your side.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -170,6 +183,7 @@ const AppPracticeTwo = (function() {
 		},
 		q14 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "To guard against glare from the headlights of a vehicle behind you, use __________ and adjust it before you drive.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -183,6 +197,7 @@ const AppPracticeTwo = (function() {
 		},
 		q15 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "At night, drivers should use high-beam headlights",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -196,6 +211,7 @@ const AppPracticeTwo = (function() {
 		},
 		q16 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "On multilane roads, you should avoid driving alongside other vehicles because",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -209,6 +225,7 @@ const AppPracticeTwo = (function() {
 		},
 		q17 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you double your speed on a highway, your braking distance increases by",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -222,6 +239,7 @@ const AppPracticeTwo = (function() {
 		},
 		q18 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this sign mean?",
 		"src" : "sign_terminating_road_some_T_intersections.svg",
 		"choices" : [
@@ -235,6 +253,7 @@ const AppPracticeTwo = (function() {
 		},
 		q19 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Before changing lanes, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -248,6 +267,7 @@ const AppPracticeTwo = (function() {
 		},
 		q20 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this device mean?",
 		"src" : "sign_railroad_control_systems_warn.svg",
 		"choices" : [
@@ -261,6 +281,7 @@ const AppPracticeTwo = (function() {
 		},
 		q21 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "What does this picture illustrate?",
 		"src" : "sign_dashed_broken_line_next.svg",
 		"choices" : [
@@ -274,6 +295,7 @@ const AppPracticeTwo = (function() {
 		},
 		q22 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you want to change several lanes on a multilane highway,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -287,6 +309,7 @@ const AppPracticeTwo = (function() {
 		},
 		q23 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Rumble strips use vibration and sound to alert drowsy or inattentive drivers that they are",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -300,6 +323,7 @@ const AppPracticeTwo = (function() {
 		},
 		q24 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "On a divided highway, you must _________ unless directed to do otherwise by a sign, traffic control device, or police officer.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -313,6 +337,7 @@ const AppPracticeTwo = (function() {
 		},
 		q25 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When you see a triangular road sign, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -326,6 +351,7 @@ const AppPracticeTwo = (function() {
 		},
 		q26 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When entering a main road from a private road, a driveway, or a parking lot, you must",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -339,6 +365,7 @@ const AppPracticeTwo = (function() {
 		},
 		q27 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "On interstate highways, slower vehicles should travel _________ except when passing.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -352,6 +379,7 @@ const AppPracticeTwo = (function() {
 		},
 		q28 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Which of these statements is FALSE?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -365,6 +393,7 @@ const AppPracticeTwo = (function() {
 		},
 		q29 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "If you see this sign, you should",
 		"src" : "sign_slippery_when_wet.svg",
 		"choices" : [
@@ -378,6 +407,7 @@ const AppPracticeTwo = (function() {
 		},
 		q30 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If there are no reduced speed limits posted at work zones, drivers should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -391,6 +421,7 @@ const AppPracticeTwo = (function() {
 		},
 		q31 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "How do you make a left turn onto a divided highway at a reduced conflict intersection?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -404,6 +435,7 @@ const AppPracticeTwo = (function() {
 		},
 		q32 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Blind pedestrians may carry _________ canes or use guide dogs.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -417,6 +449,7 @@ const AppPracticeTwo = (function() {
 		},
 		q33 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "At the end of most entrance ramps on a freeway, you will find _________ that allows you to increase your speed.",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -430,6 +463,7 @@ const AppPracticeTwo = (function() {
 		},
 		q34 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you see an oncoming vehicle in your lane, what should you do?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -443,6 +477,7 @@ const AppPracticeTwo = (function() {
 		},
 		q35 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "Signs with black letters on an orange background provide",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -456,6 +491,7 @@ const AppPracticeTwo = (function() {
 		},
 		q36 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When you drive in city traffic, you should try to look at least",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -469,6 +505,7 @@ const AppPracticeTwo = (function() {
 		},
 		q37 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "When going down a steep hill, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -482,6 +519,7 @@ const AppPracticeTwo = (function() {
 		},
 		q38 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you are being tailgated, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -495,6 +533,7 @@ const AppPracticeTwo = (function() {
 		},
 		q39 = {
 		"type" : "text",
+		"orderedChoice" : 0,
 		"title" : "If you are changing lanes, preparing to pass another vehicle, or entering traffic, signal and check for passing traffic. First, use your mirrors. Then",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -508,6 +547,7 @@ const AppPracticeTwo = (function() {
 		},
 		q40 = {
 		"type" : "picture",
+		"orderedChoice" : 0,
 		"title" : "This sign indicates that",
 		"src" : "sign_must_go_to_either_side.svg",
 		"choices" : [

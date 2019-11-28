@@ -115,12 +115,21 @@
 <script src="js/app-data.js"></script>
 <script>
 $(document).ready(function() {
-	function displayQuestionChoices(choices) {
+	function random(mn, mx) {
+		return Math.random() * (mx - mn) + mn;
+	}
+	//arr[Math.floor(random(1, 5))-1]
+	//arr[Math.floor(Math.random() * arr.length)]
+	function displayQuestionChoices(question) {
+		let choices = question.choices;
 		if (!Util.isValidArray(choices)) {
 			alert('No Choice for this Question!');
 			return;
 		}
 		$('#qBody').html('');
+		if (Util.isValidObjectKey(question, 'orderedChoice') && question.orderedChoice == 0) {
+			choices.reverse();
+		}
 		for (let c in choices) {
 			let divSelector = '<div class="input-group mb-3">';
 			divSelector = divSelector + '<div class="input-group-prepend">';
@@ -199,7 +208,7 @@ $(document).ready(function() {
 			$('#qImgBlog').removeClass('practice-test-hide').addClass('practice-test-show');
 		}
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
-		displayQuestionChoices(question.choices);
+		displayQuestionChoices(question);
 	}
 	displayPracticeTest(0, 0);
 	$('#nextQuestion').click(function() {
