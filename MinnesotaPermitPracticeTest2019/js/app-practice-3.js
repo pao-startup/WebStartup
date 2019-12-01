@@ -337,7 +337,7 @@ const AppPracticeThree = (function() {
 		},
 		q25 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "Before passing another vehicle,",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -449,7 +449,7 @@ const AppPracticeThree = (function() {
 		},
 		q33 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "Which of the following are signs of road rage?",
 		"src" : "sign_blank.png",
 		"choices" : [

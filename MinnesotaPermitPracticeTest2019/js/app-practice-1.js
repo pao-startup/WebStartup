@@ -239,7 +239,7 @@ const AppPracticeOne = (function() {
 		},
 		q18 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "When you see a reflective triangular sign on the rear of a vehicle, you should",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -533,7 +533,7 @@ const AppPracticeOne = (function() {
 		},
 		q39 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "You are more likely to survive a car crash if you use _________ together.",
 		"src" : "sign_blank.png",
 		"choices" : [

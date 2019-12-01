@@ -337,6 +337,25 @@ $(document).ready(function() {
 		if (questionIndex >= questions.length) {
 			questionIndex = 0;
 			practiceIndex = practiceIndex + 1;//next practice test
+			let qWrong = 0,
+				qCorrect = 0;
+			if (Util.isValidArray(qResults)) {
+				for (let q = 0; q < qResults.length; q++) {
+					let qResult = qResults[q];
+					if (Util.isValidObjectKey(qResult, 'choice')) {
+						if (qResult.choice.a == 0) {//Not correct
+							qWrong++;
+						} else {//Correct
+							qCorrect++;
+						}
+					}
+				}
+			}
+			if (qCorrect >= 32) {
+				alert('congratulation!');
+			} else {
+				console.log('Try again!');
+			}
 		}
 		//console.log(qResults);
 		displayPracticeTest(practiceIndex, questionIndex);

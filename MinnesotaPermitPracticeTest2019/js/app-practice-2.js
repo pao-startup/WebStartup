@@ -15,7 +15,7 @@ const AppPracticeTwo = (function() {
 		},
 		q2 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "When should you switch on your high-beam headlights?",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -99,7 +99,7 @@ const AppPracticeTwo = (function() {
 		},
 		q8 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "When you find both a solid and a dashed (broken) yellow line between opposing lanes of traffic, you must NOT pass",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -113,7 +113,7 @@ const AppPracticeTwo = (function() {
 		},
 		q9 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "At railroad crossings that are only marked with a stop sign, you should stop and then proceed only when",
 		"src" : "sign_blank.png",
 		"choices" : [
@@ -463,7 +463,7 @@ const AppPracticeTwo = (function() {
 		},
 		q34 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "If you see an oncoming vehicle in your lane, what should you do?",
 		"src" : "sign_blank.png",
 		"choices" : [
