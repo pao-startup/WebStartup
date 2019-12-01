@@ -65,6 +65,24 @@ const Util = (function() {
 		}
 		return data;
 	},
+	setLocalStorageData = function(key, value) {
+		if (window.localStorage) {
+			localStorage.setItem(key, JSON.stringify(value) );
+		} else {
+			alert('localStorage does not support!');
+		}
+	},
+	getLocalStorageData = function(key) {
+		if (window.localStorage) {
+			return JSON.parse(localStorage.getItem(key));
+		}
+		return null;
+	},
+	removeLocalStorageData = function(key) {
+		if (window.localStorage) {
+			localStorage.removeItem(key);
+		}
+	},
 	toInputValueFloat = function(inputValue) {
 		let inputValueStr = inputValue + ''; // Convert to String
 		inputValueStr = inputValueStr.replace(/,/g, '').replace(' ', ''); // replace all coma(,) from value
@@ -106,8 +124,11 @@ const Util = (function() {
 		isValidArray : isValidArray,
 		isValidObjectKey : isValidObjectKey,
 		isValidObjectValue : isValidObjectValue,
+		setLocalStorageData : setLocalStorageData,
+		getLocalStorageData : getLocalStorageData,
 		capitalizeFirstLetter : capitalizeFirstLetter,
 		toFirstLetterLowerCase : toFirstLetterLowerCase,
+		removeLocalStorageData : removeLocalStorageData,
 		toNumberFormat : toNumberFormat,
 		toMoneyFormat : toMoneyFormat,
 		isValidEmail : isValidEmail

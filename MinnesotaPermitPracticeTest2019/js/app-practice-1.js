@@ -15,7 +15,7 @@ const AppPracticeOne = (function() {
 		},
 		q2 = {
 		"type" : "picture",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "A center lane between opposing lanes of traffic may be designated for",
 		"src" : "sign_left_turns_only.svg",
 		"choices" : [
@@ -43,7 +43,7 @@ const AppPracticeOne = (function() {
 		},
 		q4 = {
 		"type" : "text",
-		"orderedChoice" : 0,
+		"orderedChoice" : 1,
 		"title" : "While driving a car equipped with airbags, do not place your hands on the steering wheel at __________ positions.",
 		"src" : "sign_blank.png",
 		"choices" : [

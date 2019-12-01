@@ -34,7 +34,7 @@
 		  -o-transform: scale(3); /* Opera */
 		  padding: 10px;
 		}
-		.practice-test-label {color: #000000;}
+		.practice-test-wrong {text-decoration: line-through;}
 		.practice-test-hint {color: #9a9a9c;}
 		.practice-test-title {font-size: 2.125rem;}
 		.practice-test-btn {font-size: 1.5rem;}
@@ -59,10 +59,12 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col blog-main">
-      <h1 id="pTitle" class="btn btn-info practice-test-title" onclick="location.href='index.html';"></h1>
+      <h1 id="pTitle" class="btn btn-info practice-test-title"></h1>
+      <button type="button" class="btn btn-primary">Correct <span id="qCorrect" class="badge badge-light">0</span></button>
+      <button type="button" class="btn btn-primary">Wrong <span id="qWrong" class="badge badge-danger">0</span></button>
 
       <div class="blog-post">
-      	<div class="row">
+      	<div id="qNumbers" class="row">
       	</div>
       </div>
 
@@ -134,7 +136,7 @@ $(document).ready(function() {
 			let divSelector = '<div class="input-group mb-3">';
 			divSelector = divSelector + '<div class="input-group-prepend">';
 			divSelector = divSelector + '<div class="input-group-text">';
-			divSelector = divSelector + '<input type="checkbox" value="' + choices[c].a + '">';
+			divSelector = divSelector + '<input type="checkbox" value="' + choices[c].a + '" data-c="' + choices[c].q + '">';
 			divSelector = divSelector + '</div>';
 			divSelector = divSelector + '</div>';
 			divSelector = divSelector + '<label class="form-control">' + choices[c].q + '</label>';
@@ -143,23 +145,62 @@ $(document).ready(function() {
 		}
 		(function() {
 			$("input[type=checkbox]").click(function() {
-				let value = $(this).val(),
-					checked = $(this).prop("checked");
+				let checked = $(this).prop("checked");
 				$('input:checkbox').prop('checked', false);
-				$(this).prop("checked", checked);
-				if (checked && 1 == value) {
-					let currentQuestionNumber = parseInt($('#qBlog').data('q'));
-					console.log('currentQuestionNumber: ' + currentQuestionNumber);
+				if (checked) {
+					let pTitle = $('#pTitle').html(),
+						questionIndex = parseInt($('#qBlog').data('q')) - 1,
+						practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+					if (practiceIndex <= -1) practiceIndex = 0;
+					if (questionIndex <= -1) questionIndex = 0;
+					let results = AppData.getResults(),
+						result = results[practiceIndex],
+						practices = AppData.getPractices(),
+						practice = practices[practiceIndex],
+						practiceNumber = (practiceIndex + 1),
+						practicePropertyName = "p" + practiceNumber,
+						qResults = result[practicePropertyName],
+						questions = practice[practicePropertyName];
+					//console.log('questionIndex: ' + questionIndex);
+					let question = questions[questionIndex],
+						choice = {"q" : $(this).data('c'), "a" : $(this).val()},
+						qResult = {"title" : question.title, "choice" : choice};
+					if (!Util.isValidArray(qResults)) {
+						qResults.push(qResult);
+					} else {
+						let oldQuestion = qResults[questionIndex];
+						if (Util.isValidObjectKey(oldQuestion, "title") && oldQuestion.title == qResult.title) {
+							qResults[questionIndex].choice = choice;
+						} else {
+							qResults.push(qResult);
+						}
+					}
 					$('#qBody').data('q', 1);
 					$('#nextQuestion').removeClass('disabled');
 					$('input:checkbox').prop("disabled", true);
 					$('#qHint').removeClass('practice-test-show').addClass('practice-test-hide');
 					$('#qResult').removeClass('practice-test-hide').addClass('practice-test-show');
-					/*if (currentQuestionNumber > 1) {
-						$('#backQuestion').removeClass('disabled');
+					if (1 == $(this).val()) {
+						$(this).prop("checked", checked);
 					} else {
-						$('#backQuestion').addClass('disabled');
-					}*/
+						//console.log(qResults);
+						$(this).parent().parent().siblings().addClass('practice-test-wrong');
+						//console.log($( ".input-group-prepend:eq(0)" ).siblings().addClass('practice-test-wrong'));
+						//console.log($( ".input-group-prepend:eq(1)" ).siblings().addClass('practice-test-wrong'));
+						//console.log($( ".input-group-prepend:eq(2)" ).siblings().addClass('practice-test-wrong'));
+						//console.log($( ".input-group-prepend:eq(3)" ).siblings().addClass('practice-test-wrong'));
+						//console.log($( "input:checkbox:eq(0)" ).data('c'));
+						//console.log($( "input:checkbox:eq(1)" ).data('c'));
+						//console.log($( "input:checkbox:eq(2)" ).data('c'));
+						//console.log($( "input:checkbox:eq(3)" ).data('c'));
+						for (let x = 0; x < 4; x++) {
+							let choiceSelector = $( "input:checkbox:eq(" + x + ")" );
+							if ($(this).data('c') != choiceSelector.data('c') && 1 == choiceSelector.val()) {
+								choiceSelector.prop("checked", checked);
+								break;
+							}
+						}
+					}
 				} else {
 					$('#nextQuestion').removeClass('disabled').addClass('disabled');
 					$('input:checkbox').prop("disabled", false);
@@ -167,6 +208,24 @@ $(document).ready(function() {
 					$('#qHint').removeClass('practice-test-hide').addClass('practice-test-show');
 					$('#qResult').removeClass('practice-test-show').addClass('practice-test-hide');
 				}
+				//if (checked && 1 == value) {
+					/*$('#qBody').data('q', 1);
+					$('#nextQuestion').removeClass('disabled');
+					$('input:checkbox').prop("disabled", true);
+					$('#qHint').removeClass('practice-test-show').addClass('practice-test-hide');
+					$('#qResult').removeClass('practice-test-hide').addClass('practice-test-show');*/
+					/*if (currentQuestionNumber > 1) {
+						$('#backQuestion').removeClass('disabled');
+					} else {
+						$('#backQuestion').addClass('disabled');
+					}*/
+				/*} else {
+					$('#nextQuestion').removeClass('disabled').addClass('disabled');
+					$('input:checkbox').prop("disabled", false);
+					$('#qBody').data('q', 0);
+					$('#qHint').removeClass('practice-test-hide').addClass('practice-test-show');
+					$('#qResult').removeClass('practice-test-show').addClass('practice-test-hide');
+				}*/
 			});
 		})();
 	}
@@ -190,18 +249,46 @@ $(document).ready(function() {
 			alert('No Question for this Practice Test!');
 			return;
 		}
+		$('#qNumbers').html('');
+		for (let q = 1; q < questions.length + 1; q++) {
+			let btnClass = (questionNumber == q) ? 'btn-outline-info' : 'btn-light';
+			let btnSelector = '<button id="q_' + q + '" type="button" class="btn ' + btnClass + ' btn-sm">'+ q +'</button>';
+			$( btnSelector ).appendTo( '#qNumbers' );
+		}
+		let qWrong = 0,
+			qCorrect = 0,
+			results = AppData.getResults(),
+			result = results[practiceIndex],
+			qResults = result[practicePropertyName];
+		//console.log(qResults);
+		if (Util.isValidArray(qResults)) {
+			for (let q = 0; q < qResults.length; q++) {
+				let qResult = qResults[q];
+				if (Util.isValidObjectKey(qResult, 'choice')) {
+					if (qResult.choice.a == 0) {//Not correct
+						$('#q_' + (q + 1)).removeClass('btn-light').removeClass('btn-info').removeClass('btn-outline-info').addClass('btn-danger');
+						qWrong++;
+					} else {//Correct
+						$('#q_' + (q + 1)).removeClass('btn-light').removeClass('btn-danger').removeClass('btn-outline-info').addClass('btn-info');
+						qCorrect++;
+					}
+				}
+			}
+		}
 		let question = questions[questionIndex];
-		console.log('practiceIndex: ' + practiceIndex + ', questionIndex: ' + questionIndex + ', questionNumber: ' + questionNumber);
+		//console.log('practiceIndex: ' + practiceIndex + ', questionIndex: ' + questionIndex + ', questionNumber: ' + questionNumber);
 		$('#qBody').data('q', 0);
-		//$('#backQuestion').removeClass('disabled').addClass('disabled');
+		if (questionIndex == 0) $('#backQuestion').removeClass('disabled').addClass('disabled');
 		$('#nextQuestion').removeClass('disabled').addClass('disabled');
 		$('#qHint').removeClass('practice-test-hide').addClass('practice-test-show');
 		$('#qResult').removeClass('practice-test-show').addClass('practice-test-hide');
 		$('#pTitle').html(AppData.PRACTICE_TITLE + practiceNumber);//practice's title
 		$('#qBlog').data('q', questionNumber);//question's number
-		$('#qTitle').html(question.title);//question's title
+		$('#qTitle').html(questionNumber + '). ' + question.title);//question's title
 		$('#qHint').html(question.hint);
 		$('#qResult').html(question.result);
+		$('#qWrong').html(qWrong);
+		$('#qCorrect').html(qCorrect);
 		if (AppData.Q_IMG_SRC_BLANK == question.src) {
 			$('#qImgBlog').removeClass('practice-test-show').addClass('practice-test-hide');
 		} else {
@@ -210,7 +297,25 @@ $(document).ready(function() {
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
 		displayQuestionChoices(question);
 	}
-	displayPracticeTest(0, 0);
+	displayPracticeTest(0, 0);//initial load data when page loads
+	$('#pTitle').click(function() {
+		let pTitle = $(this).html(),
+			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+		if (practiceIndex <= -1) practiceIndex = 0;
+		displayPracticeTest(practiceIndex, 0);
+	});
+	$('#backQuestion').click(function() {
+		let pTitle = $('#pTitle').html(),
+			questionIndex = parseInt($('#qBlog').data('q')),
+			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+		if (practiceIndex <= -1) practiceIndex = 0;
+		//alert('questionIndex: ' + questionIndex + ', practiceIndex: ' + practiceIndex);
+		if (questionIndex > 1) {
+			questionIndex = questionIndex - 2;
+		}
+		//alert('questionIndex: ' + questionIndex + ', practiceIndex: ' + practiceIndex);
+		displayPracticeTest(practiceIndex, questionIndex);
+	});
 	$('#nextQuestion').click(function() {
 		let pTitle = $('#pTitle').html(),
 			questionIndex = parseInt($('#qBlog').data('q')),
@@ -221,15 +326,19 @@ $(document).ready(function() {
 			return;
 		}
 		if (practiceIndex <= -1) practiceIndex = 0;
-		let practices = AppData.getPractices(),
+		let results = AppData.getResults(),
+			result = results[practiceIndex],
+			practices = AppData.getPractices(),
 			practice = practices[practiceIndex],
 			practiceNumber = (practiceIndex + 1),
 			practicePropertyName = "p" + practiceNumber,
+			qResults = result[practicePropertyName],
 			questions = practice[practicePropertyName];
 		if (questionIndex >= questions.length) {
 			questionIndex = 0;
 			practiceIndex = practiceIndex + 1;//next practice test
 		}
+		//console.log(qResults);
 		displayPracticeTest(practiceIndex, questionIndex);
 		$('#backQuestion').removeClass('disabled');
 		$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
