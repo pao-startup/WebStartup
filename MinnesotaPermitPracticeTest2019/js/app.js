@@ -109,8 +109,9 @@ const App = (function() {
 			});
 		})();
 	},
-	displayPracticeTest = function(practiceIndex, questionIndex) {
-		let practices = AppData.getPractices();
+	displayPracticeTest = function(language, practiceIndex, questionIndex) {
+		let practices = AppData.getPractices(),
+			khNumbers = AppData.getKhmerNumbers();
 		if (!Util.isValidArray(practices)) {
 			alert('No Practice Test!');
 			return;
@@ -176,14 +177,42 @@ const App = (function() {
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
 		displayQuestionChoices(question, qResults[questionIndex]);
 	},
+	clickOnMenuItem = function() {
+		let myData = AppData.getMyData(),
+			q = $('#appMenuItem').data('q'),
+			khSelector = '<span><img src="images/km_kh.png" alt="kh" title="Khmer"><span> ភាសាខ្មែរ</span><span> (Khmer)</span></span>',
+			enSelector = '<span><img src="images/en_us.png" alt="en" title="English"><span> English</span><span> (English)</span></span>';
+		if (q == 'en') {//Khmer
+			$('#appMenuItem').html('');
+			$('.dropdown-toggle').html('');
+			$('#appMenuItem').data('q', 'kh');
+			$( enSelector ).appendTo( '#appMenuItem' );
+			let menuSelector = khSelector + '<span class="caret"></span>';
+			$( menuSelector ).appendTo( '.dropdown-toggle' );
+			$('#appFont').prop('href', 'https://fonts.googleapis.com/css?family=Battambang&display=swap');
+			let khApp = myData.kh;
+			$('#appTitle').html(khApp.appTitle);
+		} else {//English
+			$('#appMenuItem').html('');
+			$('.dropdown-toggle').html('');
+			$('#appMenuItem').data('q', 'en');
+			$( khSelector ).appendTo( '#appMenuItem' );
+			let menuSelector = enSelector + '<span class="caret"></span>';
+			$( menuSelector ).appendTo( '.dropdown-toggle' );
+			$('#appFont').prop('href', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,900');
+			let enApp = myData.en;
+			$('#appTitle').html(enApp.appTitle);
+		}
+	},
 	init = function() {
-		displayPracticeTest(0, 0);
+		clickOnMenuItem();
+		displayPracticeTest('en', 0, 0);
 	},
 	clickOnTitle = function(selector) {
 		let pTitle = selector.html(),
 			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
 		if (practiceIndex <= -1) practiceIndex = 0;
-		displayPracticeTest(practiceIndex, 0);
+		displayPracticeTest('en', practiceIndex, 0);
 	},
 	clickOnBackBtn = function() {
 		let pTitle = $('#pTitle').html(),
@@ -193,7 +222,7 @@ const App = (function() {
 		if (questionIndex > 1) {
 			questionIndex = questionIndex - 2;
 		}
-		displayPracticeTest(practiceIndex, questionIndex);
+		displayPracticeTest('en', practiceIndex, questionIndex);
 	},
 	clickOnNextBtn = function() {
 		let pTitle = $('#pTitle').html(),
@@ -236,13 +265,14 @@ const App = (function() {
 				console.log('Try again!');
 			}
 		}
-		displayPracticeTest(practiceIndex, questionIndex);
+		displayPracticeTest('en', practiceIndex, questionIndex);
 		$('#backQuestion').removeClass('disabled');
 		$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
 	};
 	return {
 		init : init,
 		clickOnTitle : clickOnTitle,
+		clickOnMenuItem : clickOnMenuItem,
 		clickOnBackBtn : clickOnBackBtn,
 		clickOnNextBtn : clickOnNextBtn
 	};

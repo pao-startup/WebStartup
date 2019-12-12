@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Pao Sorn Im">
-    <title>Minnesota DVS Permit Practice Test 2019 | MN</title>
+    <title id="appTitle"></title>
 
     <!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,37 +42,24 @@
 		.practice-test-hide {display: none;}
     </style>
     <!-- Custom styles for this template -->
-    <link id="switchGoogleFont" href="https://fonts.googleapis.com/css?family=Battambang&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Battambang&display=swap" rel="stylesheet">-->
+    <link id="appFont" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <!-- Custom styles for this template -->
 </head>
 <body>
 
 
-<div class="container practice-test-hide">
-  <div class="jumbotron p-4 p-md-2 text-white rounded bg-dark">
-    <div class="col px-0">
-      <h1 class="display-4 font-italic">Minnesota DVS Permit Practice Test 2019 | MN</h1>
-    </div>
-  </div>
-</div>
-
-
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-    	<a id="pTitle" class="navbar-brand">WebSiteName</a>
+    	<a id="pTitle" class="navbar-brand"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown">
-      	<span><img src="images/en_us.png" alt="en" title="English"><span> English</span><span> (English)</span></span><span class="caret"></span>
-       </a>
+      <a class="dropdown-toggle" data-toggle="dropdown"></a>
       <ul class="dropdown-menu">
         <li>
-        <a id="switchLanguageItem">
-        <span><img src="images/km_kh.png" alt="kh" title="Khmer"><span> Khmer</span><span> (Khmer)</span></span>
-        </a>
+        	<a id="appMenuItem" data-q="kh"></a>
         </li>
       </ul>
     </li>
@@ -153,6 +140,9 @@ $(document).ready(function() {
 	App.init();//initial load data when page loads
 	$('#pTitle').click(function() {
 		App.clickOnTitle($(this));
+	});
+	$('#appMenuItem').click(function() {
+		App.clickOnMenuItem();
 	});
 	$('#backQuestion').click(function() {
 		App.clickOnBackBtn();

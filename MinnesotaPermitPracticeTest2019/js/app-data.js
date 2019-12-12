@@ -11,12 +11,30 @@ const AppData = (function() {
 		{"p3" : AppPracticeThree.getPractice() },
 		{"p4" : AppPracticeFour.getPractice() }
 	],
-	results = [{"p1" : []}, {"p2" : []}, {"p3" : []}, {"p4" : []}];
+	results = [{"p1" : []}, {"p2" : []}, {"p3" : []}, {"p4" : []}],
+	khNumbers = [០,១,២,៣,៤,៥,៦,៧,៨,៩],
+	myData = {
+		'en' : {
+			'appTitle' : 'Minnesota DVS Permit Practice Test 2019 | MN',
+			'pTitle' : 'MN DVS Practice Test '
+		},
+		'kh' : {
+			'appTitle' : 'រៀនកាប្រលងទ្រីស្តីសាកល្បងរបស់រដ្ធមិនីសុតាឆ្នាំ២០១៩',
+			'pTitle' : 'កាប្រលងទ្រីស្តីសាកល្បងរបស់រដ្ធមិនីសុតាទី '
+		}
+	};
 
 	let getResults = function() {
 		return results;
-	}, getPractices = function() {
+	},
+	getPractices = function() {
 		return practices;
+	},
+	getMyData = function() {
+		return myData;
+	},
+	getKhmerNumbers = function() {
+		return khNumbers;
 	};
 	return {
 		Q_TYPE_TEXT : Q_TYPE_TEXT,
@@ -25,7 +43,9 @@ const AppData = (function() {
 		QUESTION_IMAGE_PATH : QUESTION_IMAGE_PATH,
 		Q_IMG_SRC_BLANK : Q_IMG_SRC_BLANK,
 		PRACTICE_TITLE : PRACTICE_TITLE,
+		getMyData : getMyData,
 		getResults : getResults,
-		getPractices : getPractices
+		getPractices : getPractices,
+		getKhmerNumbers : getKhmerNumbers
 	};
 })();
