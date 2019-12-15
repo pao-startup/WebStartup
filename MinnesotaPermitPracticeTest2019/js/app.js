@@ -58,7 +58,7 @@ const App = (function() {
 				if (checked) {
 					let pTitle = $('#pTitle').html(),
 						questionIndex = parseInt($('#qBlog').data('q')) - 1,
-						practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+						practiceIndex = parseInt($('#qTitle').data('q')) - 1;
 					if (practiceIndex <= -1) practiceIndex = 0;
 					if (questionIndex <= -1) questionIndex = 0;
 					let results = AppData.getResults(),
@@ -109,9 +109,24 @@ const App = (function() {
 			});
 		})();
 	},
-	displayPracticeTest = function(language, practiceIndex, questionIndex) {
-		let practices = AppData.getPractices(),
-			khNumbers = AppData.getKhmerNumbers();
+	getNumberInKhmer = function(khNumbers, enNumber) {
+		if (enNumber < 10) return khNumbers[enNumber];
+		if (enNumber % 10 == 0) {
+			let r = enNumber / 10;
+			return khNumbers[r] + '' + khNumbers[0];
+		} else {
+			let r = enNumber / 10,
+				re = r + '',
+				arr = re.split('.');
+			return khNumbers[arr[0]] + '' + khNumbers[arr[1]];
+		}
+	},
+	displayPracticeTest = function(practiceIndex, questionIndex) {
+		let myData = AppData.getMyData(),
+			lang = $('#appMenuItem').data('q'),
+			practices = AppData.getPractices(),
+			khNumbers = AppData.getKhmerNumbers(),
+			myApp = (lang == 'en') ? myData.en : myData.kh;
 		if (!Util.isValidArray(practices)) {
 			alert('No Practice Test!');
 			return;
@@ -134,7 +149,8 @@ const App = (function() {
 		let question = questions[questionIndex];
 		for (let q = 1; q < questions.length + 1; q++) {
 			let btnClass = (questionNumber == q) ? 'btn-outline-info' : 'btn-light';
-			let btnSelector = '<button id="q_' + q + '" type="button" class="btn ' + btnClass + ' btn-sm">'+ q +'</button>';
+			let dq = (lang == 'en') ? q : getNumberInKhmer(khNumbers, q);
+			let btnSelector = '<button id="q_' + q + '" type="button" class="btn ' + btnClass + ' btn-sm">'+ dq +'</button>';
 			$( btnSelector ).appendTo( '#qNumbers' );
 		}
 		let qWrong = 0,
@@ -158,77 +174,91 @@ const App = (function() {
 		}
 		//console.log('practiceIndex: ' + practiceIndex + ', questionIndex: ' + questionIndex + ', questionNumber: ' + questionNumber);
 		$('#qBody').data('q', 0);
+		$('#qTitle').data('q', practiceNumber);
 		if (questionIndex == 0) $('#backQuestion').removeClass('disabled').addClass('disabled');
 		$('#nextQuestion').removeClass('disabled').addClass('disabled');
 		$('#qHint').removeClass('practice-test-hide').addClass('practice-test-show');
 		$('#qResult').removeClass('practice-test-show').addClass('practice-test-hide');
-		$('#pTitle').html(AppData.PRACTICE_TITLE + practiceNumber);//practice's title
+		practiceNumber = (lang == 'en') ? practiceNumber : khNumbers[practiceNumber];
+		let dq = (lang == 'en') ? questionNumber : getNumberInKhmer(khNumbers, questionNumber);
+		$('#pTitle').html(myApp.pTitle + practiceNumber);//practice's title
 		$('#qBlog').data('q', questionNumber);//question's number
-		$('#qTitle').html(questionNumber + '). ' + question.title);//question's title
+		$('#qTitle').html(dq + '). ' + question.title);//question's title
 		$('#qHint').html(question.hint);
 		$('#qResult').html(question.result);
-		$('#qWrong').html(qWrong);
-		$('#qCorrect').html(qCorrect);
+		$('#qWrong').html('');
+		$('#qCorrect').html('');
+		qWrong =  (lang == 'en') ? qWrong : getNumberInKhmer(khNumbers, qWrong);
+		qCorrect =  (lang == 'en') ? qCorrect : getNumberInKhmer(khNumbers, qCorrect);
+		let wrongSelector = myApp.qWrong + ' <span class="badge badge-danger">' + qWrong + '</span>';
+		let correctSelector = myApp.qCorrect + ' <span class="badge badge-light">' + qCorrect + '</span>';
+		$('#qWrong').html(wrongSelector);
+		$('#qCorrect').html(correctSelector);
 		if (AppData.Q_IMG_SRC_BLANK == question.src) {
 			$('#qImgBlog').removeClass('practice-test-show').addClass('practice-test-hide');
 		} else {
 			$('#qImgBlog').removeClass('practice-test-hide').addClass('practice-test-show');
 		}
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
+		$('#backQuestion').html(myApp.backQuestion);
+		$('#nextQuestion').html(myApp.nextQuestion);
 		displayQuestionChoices(question, qResults[questionIndex]);
 	},
 	clickOnMenuItem = function() {
-		let myData = AppData.getMyData(),
+		let myApp = {},
+			myData = AppData.getMyData(),
 			q = $('#appMenuItem').data('q'),
-			khSelector = '<span><img src="images/km_kh.png" alt="kh" title="Khmer"><span> ភាសាខ្មែរ</span><span> (Khmer)</span></span>',
+			khSelector1 = '<span><img src="images/km_kh.png" alt="kh" title="Khmer"><span> Khmer</span><span> (ភាសាខ្មែរ)</span></span>',
+			khSelector2 = '<span><img src="images/km_kh.png" alt="kh" title="Khmer"><span> ភាសាខ្មែរ</span><span> (Khmer)</span></span>',
 			enSelector = '<span><img src="images/en_us.png" alt="en" title="English"><span> English</span><span> (English)</span></span>';
 		if (q == 'en') {//Khmer
 			$('#appMenuItem').html('');
 			$('.dropdown-toggle').html('');
 			$('#appMenuItem').data('q', 'kh');
 			$( enSelector ).appendTo( '#appMenuItem' );
-			let menuSelector = khSelector + '<span class="caret"></span>';
+			let menuSelector = khSelector2 + '<span class="caret"></span>';
 			$( menuSelector ).appendTo( '.dropdown-toggle' );
-			$('#appFont').prop('href', 'https://fonts.googleapis.com/css?family=Battambang&display=swap');
-			let khApp = myData.kh;
-			$('#appTitle').html(khApp.appTitle);
+			//$('#appFont').prop('href', 'https://fonts.googleapis.com/css?family=Battambang&display=swap');
+			$('#khCss').prop('href', 'css/khCss.css');
+			myApp = myData.kh;
 		} else {//English
 			$('#appMenuItem').html('');
 			$('.dropdown-toggle').html('');
 			$('#appMenuItem').data('q', 'en');
-			$( khSelector ).appendTo( '#appMenuItem' );
+			$( khSelector1 ).appendTo( '#appMenuItem' );
 			let menuSelector = enSelector + '<span class="caret"></span>';
 			$( menuSelector ).appendTo( '.dropdown-toggle' );
-			$('#appFont').prop('href', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,900');
-			let enApp = myData.en;
-			$('#appTitle').html(enApp.appTitle);
+			//$('#appFont').prop('href', 'https://fonts.googleapis.com/css?family=Playfair+Display:700,900');
+			$('#khCss').prop('href', '');
+			myApp = myData.en;
 		}
+		$('#appTitle').html(myApp.appTitle);
+		displayPracticeTest(0, 0);
 	},
 	init = function() {
 		clickOnMenuItem();
-		displayPracticeTest('en', 0, 0);
 	},
 	clickOnTitle = function(selector) {
 		let pTitle = selector.html(),
-			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+			practiceIndex = parseInt($('#qTitle').data('q')) - 1;
 		if (practiceIndex <= -1) practiceIndex = 0;
-		displayPracticeTest('en', practiceIndex, 0);
+		displayPracticeTest(practiceIndex, 0);
 	},
 	clickOnBackBtn = function() {
 		let pTitle = $('#pTitle').html(),
 			questionIndex = parseInt($('#qBlog').data('q')),
-			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+			practiceIndex = parseInt($('#qTitle').data('q')) - 1;
 		if (practiceIndex <= -1) practiceIndex = 0;
 		if (questionIndex > 1) {
 			questionIndex = questionIndex - 2;
 		}
-		displayPracticeTest('en', practiceIndex, questionIndex);
+		displayPracticeTest(practiceIndex, questionIndex);
 	},
 	clickOnNextBtn = function() {
 		let pTitle = $('#pTitle').html(),
 			questionIndex = parseInt($('#qBlog').data('q')),
 			isChecked = parseInt($('#qBody').data('q')) > 0,
-			practiceIndex = parseInt(pTitle.replace(AppData.PRACTICE_TITLE, '')) - 1;
+			practiceIndex = parseInt($('#qTitle').data('q')) - 1;
 		if (!isChecked) {
 			alert('Try again!');
 			return;
@@ -265,7 +295,7 @@ const App = (function() {
 				console.log('Try again!');
 			}
 		}
-		displayPracticeTest('en', practiceIndex, questionIndex);
+		displayPracticeTest(practiceIndex, questionIndex);
 		$('#backQuestion').removeClass('disabled');
 		$('#backQuestion').removeClass('practice-test-hide').addClass('practice-test-show');
 	};

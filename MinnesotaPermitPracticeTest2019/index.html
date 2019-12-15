@@ -42,8 +42,9 @@
 		.practice-test-hide {display: none;}
     </style>
     <!-- Custom styles for this template -->
-    <!--<link href="https://fonts.googleapis.com/css?family=Battambang&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Battambang&display=swap" rel="stylesheet">
     <link id="appFont" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link id="khCss" href="" rel="stylesheet">
     <!-- Custom styles for this template -->
 </head>
 <body>
@@ -72,13 +73,11 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col blog-main">
-      <p style="font-family: 'Battambang', cursive;">យប់មួយ</p>
-
       <div class="blog-post">
       	<div class="row">
       		<div>
-      			<button type="button" class="btn btn-primary">Correct <span id="qCorrect" class="badge badge-light">0</span></button>
-      			<button type="button" class="btn btn-primary">Wrong <span id="qWrong" class="badge badge-danger">0</span></button>
+      			<button id="qCorrect" type="button" class="btn btn-primary"></button>
+      			<button id="qWrong" type="button" class="btn btn-primary"></button>
       		</div>
       	</div>
       </div>
@@ -88,7 +87,7 @@
       </div>
 
       <div id="qBlog" class="blog-post" data-q="1">
-        <h2 id="qTitle" class="blog-post-title"></h2>
+        <h2 id="qTitle" class="blog-post-title" data-q="1"></h2>
         <div class="row">
 			<div id="qImgBlog" class="col-md-3 practice-test-hide">
 				<img id="qImage" src="" alt="" style="max-height: 185px;">
@@ -152,5 +151,8 @@ $(document).ready(function() {
 	});
 });
 </script>
+<!--http://www.hawaii.edu/khmer/-->
+<!--https://fonts.google.com/?subset=khmer&selection.family=Battambang-->
+<!--https://developers.google.com/fonts/docs/getting_started-->
 </body>
 </html>

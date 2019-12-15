@@ -12,15 +12,23 @@ const AppData = (function() {
 		{"p4" : AppPracticeFour.getPractice() }
 	],
 	results = [{"p1" : []}, {"p2" : []}, {"p3" : []}, {"p4" : []}],
-	khNumbers = [០,១,២,៣,៤,៥,៦,៧,៨,៩],
+	khNumbers = ['០','១','២','៣','៤','៥','៦','៧','៨','៩'],
 	myData = {
 		'en' : {
 			'appTitle' : 'Minnesota DVS Permit Practice Test 2019 | MN',
-			'pTitle' : 'MN DVS Practice Test '
+			'pTitle' : 'MN DVS Practice Test ',
+			'qCorrect' : 'Correct',
+			'qWrong' : 'Wrong',
+			'backQuestion' : 'Back Question',
+			'nextQuestion' : 'Next Question'
 		},
 		'kh' : {
 			'appTitle' : 'រៀនកាប្រលងទ្រីស្តីសាកល្បងរបស់រដ្ធមិនីសុតាឆ្នាំ២០១៩',
-			'pTitle' : 'កាប្រលងទ្រីស្តីសាកល្បងរបស់រដ្ធមិនីសុតាទី '
+			'pTitle' : 'រៀនកាប្រលងទ្រីស្តីសាកល្បងរបស់រដ្ធមិនីសុតាទី ',
+			'qCorrect' : 'ចម្លើយត្រូវ',
+			'qWrong' : 'ចម្លើយខុស',
+			'backQuestion' : 'សំនួរមុន',
+			'nextQuestion' : 'សំនួរបន្ទាប់'
 		}
 	};
 
