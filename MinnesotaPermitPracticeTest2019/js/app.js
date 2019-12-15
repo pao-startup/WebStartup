@@ -155,19 +155,22 @@ const App = (function() {
 		}
 		let qWrong = 0,
 			qCorrect = 0,
-			results = AppData.getResults(),
-			result = results[practiceIndex],
-			qResults = result[practicePropertyName];
-		if (Util.isValidArray(qResults)) {
-			for (let q = 0; q < qResults.length; q++) {
-				let qResult = qResults[q];
-				if (Util.isValidObjectKey(qResult, 'choice')) {
-					if (qResult.choice.a == 0) {//Not correct
-						$('#q_' + (q + 1)).removeClass('btn-light').removeClass('btn-info').removeClass('btn-outline-info').addClass('btn-danger');
-						qWrong++;
-					} else {//Correct
-						$('#q_' + (q + 1)).removeClass('btn-light').removeClass('btn-danger').removeClass('btn-outline-info').addClass('btn-info');
-						qCorrect++;
+			qResults = [];
+		if (!(practiceIndex == 0 && questionIndex == 0)) {
+			let	results = AppData.getResults(),
+				result = results[practiceIndex],
+				qResults = result[practicePropertyName];
+			if (Util.isValidArray(qResults)) {
+				for (let q = 0; q < qResults.length; q++) {
+					let qResult = qResults[q];
+					if (Util.isValidObjectKey(qResult, 'choice')) {
+						if (qResult.choice.a == 0) {//Not correct
+							$('#q_' + (q + 1)).removeClass('btn-light').removeClass('btn-info').removeClass('btn-outline-info').addClass('btn-danger');
+							qWrong++;
+						} else {//Correct
+							$('#q_' + (q + 1)).removeClass('btn-light').removeClass('btn-danger').removeClass('btn-outline-info').addClass('btn-info');
+							qCorrect++;
+						}
 					}
 				}
 			}
@@ -202,7 +205,8 @@ const App = (function() {
 		$('#qImage').prop('src', AppData.QUESTION_IMAGE_PATH + question.src).prop('alt', question.hint);
 		$('#backQuestion').html(myApp.backQuestion);
 		$('#nextQuestion').html(myApp.nextQuestion);
-		displayQuestionChoices(question, qResults[questionIndex]);
+		let qResult = (Util.isValidArray(qResults)) ? qResults[questionIndex] : {};
+		displayQuestionChoices(question, qResult);
 	},
 	clickOnMenuItem = function() {
 		let myApp = {},
