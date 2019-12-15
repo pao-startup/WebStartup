@@ -3,10 +3,15 @@ const AppData = (function() {
 		Q_TYPE_PICTURE = "picture",
 		QUESTION_IMAGE_PATH = "images/",
 		Q_STORE_ANSWERS = "mytestresult",
-		Q_IMG_SRC_BLANK = "sign_blank.png",
-		PRACTICE_TITLE = "MN DVS Practice Test ";
+		Q_IMG_SRC_BLANK = "sign_blank.png";
 	let practices = [
 		{"p1" : AppPracticeOne.getPractice() },
+		{"p2" : AppPracticeTwo.getPractice() },
+		{"p3" : AppPracticeThree.getPractice() },
+		{"p4" : AppPracticeFour.getPractice() }
+	],
+	khPractices = [
+		{"p1" : AppKhPracticeOne.getPractice() },
 		{"p2" : AppPracticeTwo.getPractice() },
 		{"p3" : AppPracticeThree.getPractice() },
 		{"p4" : AppPracticeFour.getPractice() }
@@ -20,7 +25,8 @@ const AppData = (function() {
 			'qCorrect' : 'Correct',
 			'qWrong' : 'Wrong',
 			'backQuestion' : 'Back Question',
-			'nextQuestion' : 'Next Question'
+			'nextQuestion' : 'Next Question',
+			'practices' : practices
 		},
 		'kh' : {
 			'appTitle' : 'រៀនកាប្រលងទ្រីស្តីសាកល្បងរបស់រដ្ធមិនីសុតាឆ្នាំ២០១៩',
@@ -28,7 +34,8 @@ const AppData = (function() {
 			'qCorrect' : 'ចម្លើយត្រូវ',
 			'qWrong' : 'ចម្លើយខុស',
 			'backQuestion' : 'សំនួរមុន',
-			'nextQuestion' : 'សំនួរបន្ទាប់'
+			'nextQuestion' : 'សំនួរបន្ទាប់',
+			'practices' : khPractices
 		}
 	};
 
@@ -50,7 +57,6 @@ const AppData = (function() {
 		Q_STORE_ANSWERS : Q_STORE_ANSWERS,
 		QUESTION_IMAGE_PATH : QUESTION_IMAGE_PATH,
 		Q_IMG_SRC_BLANK : Q_IMG_SRC_BLANK,
-		PRACTICE_TITLE : PRACTICE_TITLE,
 		getMyData : getMyData,
 		getResults : getResults,
 		getPractices : getPractices,

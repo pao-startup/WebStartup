@@ -124,9 +124,10 @@ const App = (function() {
 	displayPracticeTest = function(practiceIndex, questionIndex) {
 		let myData = AppData.getMyData(),
 			lang = $('#appMenuItem').data('q'),
-			practices = AppData.getPractices(),
+			//practices = AppData.getPractices(),
 			khNumbers = AppData.getKhmerNumbers(),
-			myApp = (lang == 'en') ? myData.en : myData.kh;
+			myApp = (lang == 'en') ? myData.en : myData.kh,
+			practices = myApp.practices;
 		if (!Util.isValidArray(practices)) {
 			alert('No Practice Test!');
 			return;
