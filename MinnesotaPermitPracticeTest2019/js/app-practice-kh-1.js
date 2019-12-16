@@ -5,13 +5,13 @@ const AppKhPracticeOne = (function() {
 		"title" : "តើផ្លាកសញ្ញានេះបង្ហាញពីឣ្វី?",
 		"src" : "sign_school_zone_ahead.svg",
 		"choices" : [
-			{"q" : "A school zone", "a" : 1},
-			{"q" : "A pedestrian crossing", "a" : 0},
-			{"q" : "A hospital", "a" : 0},
-			{"q" : "A bus stop", "a" : 0},
+			{"q" : "តំបន់សាលារៀន", "a" : 1},
+			{"q" : "កន្លែងឣ្នកថ្មើរជើងឆ្លងកាត់", "a" : 0},
+			{"q" : "តំបន់មន្ទីរពេទ្យ", "a" : 0},
+			{"q" : "ស្ថានីឡានក្រុងឈប់", "a" : 0},
 			],
-		"hint" : "Prepare to slow down and yield to young pedestrians.",
-		"result" : "This sign indicates a school zone ahead. Schoolchildren may be crossing the road ahead, so slow down and proceed with caution."
+		"hint" : "ប្រុងប្រៀបដើម្បីបន្ថយល្បឿនហើយនិងឣោយឣតិភាពទៅឣ្នកថ្មើរជើងក្មេងឭ",
+		"result" : "ផ្លាកសញ្ញានេះបង្ហាញពីតំបន់សាលារៀននៅខាងមុខ។ សិស្សសាលាឣាចកំពុងឆ្លងកាត់នៅផ្លូវខាងមុខ បន្ថយល្បឿននិងបើកបរដោយការប្រុងប្រយ័ត្ន។"
 		},
 		q2 = {
 		"type" : "picture",
