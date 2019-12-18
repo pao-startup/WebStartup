@@ -16,16 +16,16 @@ const AppKhPracticeOne = (function() {
 		q2 = {
 		"type" : "picture",
 		"orderedChoice" : 1,
-		"title" : "A center lane between opposing lanes of traffic may be designated for",
+		"title" : "ផ្លូវកណ្តាលមួយនៅចន្លោៈផ្លូវទៅនិងផ្លូវមកត្រូវបានបង្កើតឡើងដើម្បី",
 		"src" : "sign_left_turns_only.svg",
 		"choices" : [
-			{"q" : "right turns only.", "a" : 0},
-			{"q" : "passing", "a" : 0},
-			{"q" : "left turns only.", "a" : 1},
-			{"q" : "all of the above.", "a" : 0},
+			{"q" : "បានតែបត់ស្តាំ", "a" : 0},
+			{"q" : "ឆ្លងកាត់ទៅមក", "a" : 0},
+			{"q" : "បានតែបត់ឆ្វេង", "a" : 1},
+			{"q" : "ចំលើយខាងលើទាំងឣស់", "a" : 0},
 			],
-		"hint" : "Only for turning left.",
-		"result" : "A center lane between lanes of traffic traveling in opposite directions may be designated for left turns only. This type of lane is marked by parallel solid and dashed yellow lines and is sometimes accompanied by white arrows on the pavement."
+		"hint" : "សំរាមតែបត់ឆ្វេង",
+		"result" : "ផ្លូវកណ្តាលមួយនៅចន្លោៈផ្លូវទៅនិងផ្លូវមកត្រូវបានបង្កើតឡើងដើម្បីបានតែបត់ឆ្វេង។ ផ្លូវប្រភេទនេះត្រូវបានគូសដោយបន្ទាត់ពណ៏លឿងដាចឭហើយពេលខ្លះត្រូវបានឣមសញ្ញាព្រួញពណ៏ស។"
 		},
 		q3 = {
 		"type" : "picture",
