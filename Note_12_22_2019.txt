@@ -1,0 +1,18 @@
+Java Review:
+
+*** import is a key used for include existing Libraries to use in our application.
+
+*** Library in Java:
+1. Default Library - is the Library without using import key word
+Ex: java.lang.System
+2. Custom Library - is the Library with using import key word
+Ex: java.util.* 
+
+
+Access Modifier:
+*** public is a key in java, it uses for accessed anywhere (access modifier).
+*** private?
+*** protected?
+*** default?
+Example:
+
