@@ -30,16 +30,16 @@ const AppKhPracticeOne = (function() {
 		q3 = {
 		"type" : "picture",
 		"orderedChoice" : 0,
-		"title" : "What does this sign mean?",
+		"title" : "តើសញ្ញានេះមានន័យឣ្វី?",
 		"src" : "sign_Y_intersection.svg",
 		"choices" : [
-			{"q" : "A youth hostel ahead", "a" : 0},
-			{"q" : "A yield sign ahead", "a" : 0},
-			{"q" : "A side road ahead", "a" : 0},
-			{"q" : "A Y-intersection ahead", "a" : 1},
+			{"q" : "សណ្ឋាគារ​យុវជននៅខាងមុខ", "a" : 0},
+			{"q" : "សញ្ញាយ៉ែលនៅខាងមុខ", "a" : 0},
+			{"q" : "សញ្ញាសាយរូតនៅខាងមុខ", "a" : 0},
+			{"q" : "សញ្ញាផ្លូវប្រសព្វឣក្សរវាយនៅខាងមុខ", "a" : 1},
 			],
-		"hint" : "Traffic splitting.",
-		"result" : "This sign indicates a Y-intersection. The road ahead splits into two different directions. Be prepared for traffic crossing in your path and prepare to turn in one direction or the other."
+		"hint" : "សញ្ញាចរាចរពុះ",
+		"result" : "សញ្ញានេះជាសញ្ញាផ្លូវប្រសព្វឣក្សរវាយ។ ផ្លូវនៅខាងមុខចែកជាផ្លូវពីរមានទិសដៅផ្សេងគ្នា។ ប្រុងប្រៀបសំរាប់ចរាចរឆ្លងកាត់នៅលើផ្លូវឣ្នកហើយប្រុងប្រៀបបត់ទៅទិសដៅឬទិសដៅផ្សេងទៀត។"
 		},
 		q4 = {
 		"type" : "text",
